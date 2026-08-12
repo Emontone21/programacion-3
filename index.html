@@ -267,6 +267,118 @@ textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:
   .wrap{padding:30px 20px 70px}
   h1{font-size:27px}
 }
+
+/* ---------- parciales / ejercicios tipo ---------- */
+.tipo{background:var(--paper-2);border:1px solid var(--line);border-radius:8px;margin-bottom:14px;overflow:hidden}
+.tipo .th{padding:13px 18px;display:flex;gap:13px;align-items:center;background:#f1ece4;border-bottom:1px solid var(--line);cursor:pointer}
+.tipo .th:hover{background:#ebe5db}
+.tipo .rk{
+  font-family:ui-sans-serif,sans-serif;font-weight:700;font-size:14px;color:#fff;background:var(--nav);
+  width:27px;height:27px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none
+}
+.tipo.top .rk{background:var(--accent-2)}
+.tipo .tt{font-family:ui-sans-serif,sans-serif;font-weight:600;font-size:15.5px;line-height:1.3}
+.tipo .tsub{font-family:ui-sans-serif,sans-serif;font-size:12px;color:var(--ink-soft);margin-top:2px}
+.tipo .freq{margin-left:auto;flex:none;text-align:right;font-family:ui-sans-serif,sans-serif;padding-left:10px}
+.tipo .freq b{font-size:16px;color:var(--accent-2);letter-spacing:-.02em}
+.tipo .freq span{display:block;font-size:10px;color:var(--ink-soft);letter-spacing:.09em;text-transform:uppercase}
+.tipo .tb{padding:4px 20px 20px;display:none}
+.tipo.open .tb{display:block}
+.bar{height:5px;background:#e6e0d6;border-radius:3px;overflow:hidden;margin:14px 0 16px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.yrs{margin:0 0 18px;line-height:2.1}
+.yr{
+  display:inline-block;font-family:ui-sans-serif,sans-serif;font-size:11px;background:#e9e3d9;
+  color:#4c463d;padding:3px 9px;border-radius:4px;margin-right:5px;white-space:nowrap
+}
+table.mapa{font-size:13px}
+table.mapa td{padding:7px 9px}
+table.mapa td.ex{font-family:ui-sans-serif,sans-serif;font-size:11.5px}
+table.mapa .k{
+  display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;color:#fff;
+  font-family:ui-sans-serif,sans-serif;white-space:nowrap
+}
+.k-dfs{background:#0d6e64}.k-tad{background:#b4530a}.k-lst{background:#7c4dbe}
+.k-ord{background:#1c5b9e}.k-gra{background:#8a6d1f}.k-arb{background:#1a7f4b}
+.k-mat{background:#5a544c}.k-sec{background:#b3261e}.k-map{background:#a0522d}
+
+/* ---------- laboratorios interactivos ---------- */
+.lab{background:var(--paper-2);border:1px solid var(--line);border-radius:8px;padding:14px 15px;margin:0 0 18px}
+.labbar{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.labbar .lbl{font-family:ui-sans-serif,sans-serif;font-size:12px;color:var(--ink-soft);margin:0 2px}
+.labbar .sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+.labbar button,.labbar select,.labbar input{font-size:13px;padding:6px 11px}
+.labbar input[type=number],.labbar input[type=text]{width:62px;font-family:"Cascadia Mono",monospace;border:1px solid var(--line);border-radius:6px;background:#fff}
+.labbar button.on{background:var(--nav);color:#fff;border-color:var(--nav)}
+.labbar label{font-family:ui-sans-serif,sans-serif;font-size:13px;display:flex;align-items:center;gap:5px;cursor:pointer}
+.labbar label input{accent-color:var(--accent);width:auto}
+
+svg.board{
+  width:100%;height:400px;background:#fbf9f5;border:1px solid var(--line);
+  border-radius:7px;display:block;touch-action:none;cursor:crosshair
+}
+svg.board.mov{cursor:grab}
+svg.board text{font-family:ui-sans-serif,-apple-system,"Segoe UI",sans-serif;user-select:none}
+svg.strip{width:100%;background:#fbf9f5;border:1px solid var(--line);border-radius:7px;display:block}
+.scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+.gpanels{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:820px){.gpanels{grid-template-columns:1fr}}
+.panel{background:var(--paper-2);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.panel h4{margin:0 0 10px;color:var(--accent)}
+.panel.k4{margin-top:14px}
+
+table.adj{font-family:"Cascadia Mono",Consolas,monospace;font-size:12.5px;width:auto;margin:0;background:none}
+table.adj td,table.adj th{padding:3px 7px;text-align:center;border:1px solid var(--line);background:#fff;font-size:12.5px}
+table.adj th{background:#efeae2;text-transform:none;letter-spacing:0;color:var(--accent-2);font-weight:700}
+table.adj td.one{background:#dff0ea;color:var(--accent);font-weight:700}
+table.adj td.hi{outline:2px solid var(--accent-2);outline-offset:-2px}
+
+.adjlist{font-family:"Cascadia Mono",Consolas,monospace;font-size:13px;line-height:2.2}
+.adjlist .v{display:inline-block;min-width:26px;color:var(--accent-2);font-weight:700}
+.adjlist .cell{display:inline-block;border:1px solid var(--line);background:#fff;padding:1px 8px;border-radius:3px}
+.adjlist .ar{color:#9a938a;padding:0 3px}
+.adjlist .nil{color:#9a938a}
+
+.arr{display:flex;gap:4px;flex-wrap:wrap;font-family:"Cascadia Mono",Consolas,monospace;font-size:12.5px}
+.arr .c{border:1px solid var(--line);background:#fff;border-radius:4px;padding:4px 7px;min-width:34px;text-align:center;line-height:1.25}
+.arr .c .i{display:block;font-size:9.5px;color:#9a938a;font-family:ui-sans-serif,sans-serif}
+.arr .c.t{background:#dff0ea;border-color:var(--accent);color:var(--accent);font-weight:700}
+.arr .c.cur{background:#fdefe0;border-color:var(--accent-2);color:var(--accent-2);font-weight:700}
+.arr .c.off{color:#b8b1a6}
+
+.log{
+  font-family:ui-sans-serif,-apple-system,"Segoe UI",sans-serif;font-size:13.5px;background:#f2efe9;
+  border-left:3px solid var(--accent);border-radius:6px;padding:10px 14px;margin:12px 0 0;line-height:1.5
+}
+.log b{color:var(--accent)}
+.log.bad{border-left-color:var(--bad)}
+.log.bad b{color:var(--bad)}
+.stepno{
+  font-family:ui-sans-serif,sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:3px;display:block
+}
+.klist{font-family:"Cascadia Mono",Consolas,monospace;font-size:13px;line-height:1.9}
+.klist .e{display:inline-block;padding:2px 9px;border:1px solid var(--line);border-radius:4px;background:#fff;margin:0 6px 6px 0}
+.klist .e.ok{background:#eef8f1;border-color:var(--ok);color:var(--ok);font-weight:700}
+.klist .e.no{background:#f7f2f1;border-color:#d8b5b2;color:#9a6560;text-decoration:line-through}
+.klist .e.now{outline:2px solid var(--accent-2);outline-offset:1px}
+
+.ops{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 0}
+.ops button{font-size:12.5px;padding:6px 11px}
+.opnote{
+  font-family:ui-sans-serif,sans-serif;font-size:12.5px;color:var(--ink-soft);margin:10px 0 0;
+  display:flex;gap:8px;align-items:center;flex-wrap:wrap
+}
+.obadge{
+  font-family:"Cascadia Mono",monospace;font-size:11.5px;background:#ece7de;color:#4a3a1f;
+  padding:2px 8px;border-radius:4px;font-weight:700
+}
+.obadge.o1{background:#dff0ea;color:var(--accent)}
+.obadge.on{background:#fdefe0;color:var(--accent-2)}
+.tipsel{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+pre.code .ln{display:block;padding:0 5px;margin:0 -5px;border-radius:3px}
+pre.code .ln.hi{background:#33414f;box-shadow:inset 3px 0 0 var(--accent-2)}
 </style>
 </head>
 <body>
@@ -279,6 +391,11 @@ textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:
   <div class="grp">General</div>
   <a href="#" data-go="inicio" class="active">Inicio</a>
   <a href="#" data-go="machete"><span class="n">≡</span>Machete de complejidades</a>
+  <div class="grp">Parciales</div>
+  <a href="#" data-go="parciales"><span class="n">★</span>Ejercicios más repetidos</a>
+  <div class="grp">Laboratorio</div>
+  <a href="#" data-go="pizarron"><span class="n">◉</span>Pizarrón de grafos</a>
+  <a href="#" data-go="lab"><span class="n">▤</span>Estructuras en vivo</a>
   <div class="grp">Teórico</div>
   <a href="#" data-go="m1"><span class="n">1</span>Análisis de Algoritmos</a>
   <a href="#" data-go="m2"><span class="n">2</span>Teoría de Grafos</a>
@@ -297,13 +414,20 @@ textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:
 <section id="inicio" class="on">
   <div class="kicker">Licenciatura en Informática · Ingeniería en Informática</div>
   <h1>Programación III</h1>
-  <p class="lede">Guía de estudio completa: seis módulos teóricos con las implementaciones en C++, un quiz autocorregible de 56 preguntas y los 34 ejercicios de los prácticos con solución.</p>
+  <p class="lede">Guía de estudio completa: seis módulos teóricos con las implementaciones en C++, el análisis de los doce exámenes con los ejercicios que más se repiten, dos laboratorios interactivos, un quiz autocorregible de 56 preguntas y los 34 ejercicios de los prácticos con solución.</p>
 
   <div class="stats">
     <div class="stat"><div class="v">6</div><div class="k">módulos teóricos</div></div>
     <div class="stat"><div class="v">56</div><div class="k">preguntas de quiz</div></div>
     <div class="stat"><div class="v">34</div><div class="k">ejercicios</div></div>
-    <div class="stat"><div class="v">5</div><div class="k">prácticos</div></div>
+    <div class="stat"><div class="v">12</div><div class="k">exámenes analizados</div></div>
+  </div>
+
+  <h2>Para preparar el examen</h2>
+  <div class="cards">
+    <a class="card" href="#" data-go="parciales"><div class="num">PARCIALES</div><h3>Los ejercicios que siempre caen</h3><p>Doce exámenes de 2019 a 2026 ordenados por frecuencia: diez moldes, con su esqueleto de solución.</p></a>
+    <a class="card" href="#" data-go="pizarron"><div class="num">LABORATORIO</div><h3>Pizarrón de grafos</h3><p>Dibujá el grafo, mirá su matriz y sus listas en vivo, y corré DFS, BFS o Kruskal paso a paso.</p></a>
+    <a class="card" href="#" data-go="lab"><div class="num">LABORATORIO</div><h3>Estructuras en vivo</h3><p>LPPF, LDE, LC, LDEC, LCPPF, mapeo, hash, ABB, AVL, N-ario y MFSet, con los punteros a la vista.</p></a>
   </div>
 
   <h2>Los módulos</h2>
@@ -321,6 +445,7 @@ textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:
     <div class="t">Ruta sugerida</div>
     <p><strong>1. Leé el módulo</strong> → <strong>2. Rendí el quiz de ese módulo</strong> (filtro arriba de la lista) → <strong>3. Hacé los ejercicios de código</strong> del práctico correspondiente sin mirar la solución.</p>
     <p>El punto 3 es el que más rinde: escribir el código a mano antes de destapar la respuesta es lo que realmente fija el tema. El cuadro de texto está para eso.</p>
+    <p>Si el examen es en pocos días, invertí el orden: empezá por <a class="inline" href="#" data-go="parciales">los ejercicios más repetidos</a> y volvé al módulo solo cuando algo no te cierre.</p>
   </div>
 
   <h3>Qué práctico corresponde a qué módulo</h3>
@@ -1988,6 +2113,230 @@ GradoVertice     : Grafo x V     -> Entero    Precond: el vértice pertenece
   </div>
 
   <div id="exList"></div>
+</section>
+
+
+<section id="parciales">
+  <div class="kicker">Exámenes 2019 – 2026</div>
+  <h1>Parciales: los ejercicios que siempre caen</h1>
+  <p class="lede">Doce exámenes resueltos, cuarenta y ocho ejercicios, y un puñado muy chico de moldes que se repiten. Acá están ordenados por cuántas veces aparecieron, con el esqueleto de solución de cada uno.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="v">12</div><div class="k">exámenes analizados</div></div>
+    <div class="stat"><div class="v">48</div><div class="k">ejercicios</div></div>
+    <div class="stat"><div class="v">10</div><div class="k">moldes distintos</div></div>
+    <div class="stat"><div class="v">2</div><div class="k">caen en el 100%</div></div>
+  </div>
+
+  <div class="box warn">
+    <div class="t">La conclusión incómoda</div>
+    <p>De los cuarenta y ocho ejercicios, <strong>cuarenta encajan en los primeros cinco moldes</strong>. El examen no evalúa cuánto sabés de la materia: evalúa si reconocés cuál de estos cinco te tocó y si te acordás del esqueleto. Los dos primeros aparecieron en <strong>los doce exámenes sin excepción</strong> y juntos valen entre 44 y 58 puntos de los 100.</p>
+  </div>
+
+  <h2>Mapa: qué salió en cada examen</h2>
+  <p>Cada fila es un examen; cada celda, uno de sus ejercicios. Leído en vertical se ve el patrón: la última columna es siempre el ejercicio de realidad, y en cada fila hay siempre un DFS.</p>
+
+  <div class="scrollx">
+  <table class="mapa">
+    <tr><th>Examen</th><th>Ejercicio 1</th><th>Ejercicio 2</th><th>Ejercicio 3</th><th>Ejercicio 4</th></tr>
+    <tr><td class="o">2019 Feb</td>
+      <td class="ex"><span class="k k-gra">Grafo formal</span> K₅, matriz + listas, inducción</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> distancia entre u y v</td>
+      <td class="ex"><span class="k k-lst">LDEC</span> Insfront, Desplegar, órdenes</td>
+      <td class="ex"><span class="k k-tad">TAD</span> biblioteca · AVL + LPPF</td></tr>
+    <tr><td class="o">2019 Ago</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> componentes de igual tamaño</td>
+      <td class="ex"><span class="k k-map">Mapeo</span> función f, total e inyectiva</td>
+      <td class="ex"><span class="k k-ord">Orden</span> peor caso y bajarlo</td>
+      <td class="ex"><span class="k k-tad">TAD</span> torneo · Hash</td></tr>
+    <tr><td class="o">2019 Nov</td>
+      <td class="ex"><span class="k k-gra">Grafo formal</span> completo, afirmaciones</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> contar puentes</td>
+      <td class="ex"><span class="k k-sec">Deque</span> primitivas + LDEPPF</td>
+      <td class="ex"><span class="k k-tad">TAD</span> consultorio · LPPF</td></tr>
+    <tr><td class="o">2022 Nov</td>
+      <td class="ex"><span class="k k-ord">Múltiple opción</span> 8 preguntas</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> componentes de múltiplos</td>
+      <td class="ex"><span class="k k-arb">N-ario</span> cuántos pertenecen</td>
+      <td class="ex"><span class="k k-tad">TAD</span> comercio · Hash → AVL</td></tr>
+    <tr><td class="o">2023 Feb</td>
+      <td class="ex"><span class="k k-ord">Múltiple opción</span> 8 preguntas</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> componente con más de <i>cant</i></td>
+      <td class="ex"><span class="k k-lst">LDEPPF</span> invertir valores</td>
+      <td class="ex"><span class="k k-tad">TAD</span> discos · Hash + LPPF</td></tr>
+    <tr><td class="o">2023 Ago</td>
+      <td class="ex"><span class="k k-mat">Matrices</span> suma, producto y órdenes</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> ¿la arista genera ciclo?</td>
+      <td class="ex"><span class="k k-lst">LDEC</span> Insback, Sumar, órdenes</td>
+      <td class="ex"><span class="k k-tad">TAD</span> comercio · Hash</td></tr>
+    <tr><td class="o">2023 Nov</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> eliminar puentes de <i>v</i></td>
+      <td class="ex"><span class="k k-mat">Matrices</span> triangular en un arreglo</td>
+      <td class="ex"><span class="k k-sec">Deque</span> primitivas + arreglo con tope</td>
+      <td class="ex"><span class="k k-tad">TAD</span> excursiones · Queue + Hash</td></tr>
+    <tr><td class="o">2024 Nov</td>
+      <td class="ex"><span class="k k-ord">Orden</span> ¿puede existir? × 4</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> vértices = aristas</td>
+      <td class="ex"><span class="k k-lst">LDEPPF</span> construir pares e impares</td>
+      <td class="ex"><span class="k k-tad">TAD</span> libros · AVL + LPPF</td></tr>
+    <tr><td class="o">2025 Feb</td>
+      <td class="ex"><span class="k k-gra">Grafo formal</span> u+v par, demostración</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> al menos <i>cant</i> puentes</td>
+      <td class="ex"><span class="k k-sec">Queue</span> duplicar + dos estructuras</td>
+      <td class="ex"><span class="k k-tad">TAD</span> club · Hash</td></tr>
+    <tr><td class="o">2025 Ago</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> <i>cant</i> componentes con múltiplo</td>
+      <td class="ex"><span class="k k-lst">LPPF</span> promedio y borrar luego de</td>
+      <td class="ex"><span class="k k-arb">Hash → ABB</span> copiar ordenado</td>
+      <td class="ex"><span class="k k-tad">TAD</span> club de campo · Mapeo</td></tr>
+    <tr><td class="o">2025 Nov</td>
+      <td class="ex"><span class="k k-gra">Grafo formal</span> dirigido, inducción</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> distancia = <i>cant</i></td>
+      <td class="ex"><span class="k k-arb">N-ario</span> cuántos pertenecen</td>
+      <td class="ex"><span class="k k-tad">TAD</span> tesis · Hash + arreglo</td></tr>
+    <tr><td class="o">2026 Feb</td>
+      <td class="ex"><span class="k k-ord">Orden</span> ¿puede existir? × 4</td>
+      <td class="ex"><span class="k k-dfs">DFS</span> componentes de múltiplos</td>
+      <td class="ex"><span class="k k-lst">LCPPF</span> Insback y Pertenece</td>
+      <td class="ex"><span class="k k-tad">TAD</span> expedientes · AVL + LPPF</td></tr>
+  </table>
+  </div>
+
+  <h2>Los moldes, por frecuencia</h2>
+
+  <div class="toolbar" id="tipoChips">
+    <span class="lbl">Filtrar:</span>
+    <span class="chip on" data-f="todos">Todos</span>
+    <span class="chip" data-f="grafos">Grafos</span>
+    <span class="chip" data-f="tad">TAD</span>
+    <span class="chip" data-f="listas">Listas</span>
+    <span class="chip" data-f="orden">Órdenes</span>
+    <span class="chip" data-f="arboles">Árboles</span>
+  </div>
+
+  <div id="tipoList"></div>
+
+  <h2>Lo que casi nunca cae</h2>
+  <p>Para administrar el tiempo de estudio conviene saber también qué <em>no</em> aparece. En doce exámenes: <strong>Kruskal</strong> apareció una sola vez y como pregunta de múltiple opción, nunca como ejercicio de desarrollo. <strong>BFS</strong> no apareció nunca como ejercicio: todos los recorridos pedidos son «basados en DFS». <strong>MFSet</strong> no se pidió implementar jamás. Los <strong>AVL</strong> se eligen todo el tiempo como estructura, pero nunca se pidió programar una rotación.</p>
+
+  <div class="box">
+    <div class="t">Antes de ir al examen</div>
+    <p>Escribí de memoria, en papel, estas tres cosas: el esqueleto <code>DFS</code> con matriz y con listas, el bloque <code>if (Member(diccio,k)) { X x = Find(diccio,k); … }</code>, y los cuatro <code>typedef</code> de Hash, AVL, Mapeo y LPPF. Con eso arrancado tenés medio examen escrito antes de leer el enunciado.</p>
+  </div>
+</section>
+
+<section id="pizarron">
+  <div class="kicker">Laboratorio</div>
+  <h1>Pizarrón de grafos</h1>
+  <p class="lede">Dibujá el grafo, mirá cómo queda su representación en memoria mientras lo hacés, y corré DFS, BFS o Kruskal paso a paso sobre él. Es la misma secuencia que te van a pedir en el examen: dibujo, matriz, listas, algoritmo.</p>
+
+  <div class="lab">
+    <div class="labbar">
+      <span class="lbl">Modo</span>
+      <button id="gmv" onclick="gModo_('v')">Vértice</button>
+      <button id="gma" onclick="gModo_('a')">Arista</button>
+      <button id="gmm" onclick="gModo_('m')">Mover</button>
+      <button id="gmb" onclick="gModo_('b')">Borrar</button>
+      <span class="sep"></span>
+      <label><input type="checkbox" id="gDir" onchange="gToggleDir()"> Dirigido</label>
+      <label><input type="checkbox" id="gW" onchange="gToggleW()"> Con costos</label>
+      <input type="number" id="gCost" value="1" min="1" style="display:none" title="Costo de la próxima arista">
+      <span class="sep"></span>
+      <select id="gPreset" onchange="gLoadPreset(this.value)"></select>
+      <button onclick="gClear()">Limpiar</button>
+      <span class="lbl" style="margin-left:auto" id="gStats"></span>
+    </div>
+    <svg class="board" id="gBoard" viewBox="0 0 900 400" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="log" id="gHint">Tocá el pizarrón para agregar vértices.</div>
+  </div>
+
+  <div class="gpanels">
+    <div class="panel">
+      <h4>Matriz de adyacencia</h4>
+      <div class="scrollx" id="gMat"></div>
+      <p class="hint">En un grafo no dirigido es simétrica: por eso el ejercicio 2 de 2023 Nov propone guardar solo la mitad.</p>
+    </div>
+    <div class="panel">
+      <h4>Listas de adyacencia</h4>
+      <div class="scrollx" id="gLst"></div>
+      <p class="hint">Un arreglo de N listas. Ocupa lugar proporcional a las aristas, no a N².</p>
+    </div>
+  </div>
+
+  <h2>Correr un algoritmo paso a paso</h2>
+  <p>Elegí el algoritmo y el vértice de arranque. En cada paso vas a ver qué línea del código se está ejecutando, cómo va quedando <code>visitado[]</code> y qué hay en la pila de llamadas o en la cola.</p>
+
+  <div class="lab">
+    <div class="labbar">
+      <span class="lbl">Algoritmo</span>
+      <select id="gAlgo">
+        <option value="dfs">DFS — recorrida en profundidad</option>
+        <option value="bfs">BFS — recorrida en amplitud</option>
+        <option value="kru">Kruskal — árbol de cubrimiento de costo mínimo</option>
+      </select>
+      <span class="lbl">Desde el vértice</span>
+      <select id="gStart"></select>
+      <button class="primary" onclick="gRun()">Preparar</button>
+      <span class="sep"></span>
+      <button onclick="gStep(-1)">◀ Atrás</button>
+      <button onclick="gStep(1)">Paso ▶</button>
+      <button id="gAutoBtn" onclick="gAuto()">Auto</button>
+      <button onclick="gReset()">Reiniciar</button>
+    </div>
+    <div id="gState"></div>
+    <div class="log" id="gMsg">Apretá <b>Preparar</b> para armar la secuencia de pasos.</div>
+  </div>
+
+  <div class="panel k4">
+    <h4>El código que se está ejecutando</h4>
+    <div id="gCodeBox"><p class="hint">La línea activa se resalta a medida que avanzás.</p></div>
+  </div>
+
+  <div class="box warn">
+    <div class="t">Dos cosas para mirar mientras jugás</div>
+    <p>Primero: en DFS, la <b>pila</b> es la recursión. Cada llamada que no terminó es un nivel. Cuando la pila se vacía, terminó una componente conexa — y ahí el envoltorio busca el próximo vértice sin visitar.</p>
+    <p>Segundo: dibujá un grafo con un puente y corré DFS desde los dos lados. Vas a ver por qué el algoritmo de puentes tiene que <em>borrar la arista y volver a recorrer</em>: no hay forma de detectarlo en una sola pasada con las herramientas del curso.</p>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="kicker">Laboratorio</div>
+  <h1>Laboratorio de estructuras</h1>
+  <p class="lede">Las catorce estructuras del curso, funcionando. Ejecutá una operación y mirá qué punteros se mueven, qué código en C++ la implementa y por qué queda O(1) o O(n) en esa variante y no en otra.</p>
+
+  <div class="tipsel" id="estChips"></div>
+
+  <div class="lab">
+    <div id="estHead"></div>
+    <div class="labbar" id="estOps" style="margin-top:14px"></div>
+    <div class="scrollx" id="estViz"></div>
+    <div class="log" id="estLog"></div>
+  </div>
+
+  <div class="gpanels">
+    <div class="panel">
+      <h4>Definición en C++</h4>
+      <div id="estTipos"></div>
+    </div>
+    <div class="panel">
+      <h4>La operación que acabás de ejecutar</h4>
+      <div id="estCode"></div>
+    </div>
+  </div>
+
+  <h2>Lo que conviene probar</h2>
+  <ul>
+    <li><strong>Remback en una LPPF y en una LDEPPF.</strong> Es la misma operación con el mismo dibujo, pero en una es O(n) y en la otra O(1). Ese contraste es literalmente el ejercicio 1b de 2026 Feb.</li>
+    <li><strong>Insback en una LC y en una LDEC.</strong> La circular simple obliga a dar toda la vuelta; la circular doble llega al último con <code>L -&gt; ant</code>.</li>
+    <li><strong>Insertar 1, 2, 3, 4, 5 y 6 en un ABB.</strong> Hay un botón que lo hace. Después insertá los mismos valores en el AVL y compará las dos formas.</li>
+    <li><strong>Provocar una colisión en el Hash.</strong> Tres claves en la misma cubeta muestran por qué el O(1) del Hash es «en caso promedio» y nunca en el peor.</li>
+    <li><strong>Union sobre elementos que ya están juntos en el MFSet.</strong> Es exactamente el momento en que Kruskal descarta una arista por formar ciclo.</li>
+  </ul>
+
+  <div class="box def">
+    <div class="t">Para el examen</div>
+    <p>Los ejercicios de estructuras casi siempre piden tres cosas juntas: el <code>typedef</code>, un dibujo de cómo queda en memoria con valores concretos, y dos operaciones no recursivas. El dibujo que hay acá arriba es el que tenés que saber hacer a mano: cajas con sus campos, flechas entre nodos, y los punteros externos rotulados.</p>
+  </div>
 </section>
 
 
@@ -4591,11 +4940,2277 @@ function verSol(id,btn){
 }
 function limpiar(id){document.querySelector('#'+id+' textarea').value='';}
 
+/* ============ parciales: ejercicios tipo ============ */
+const TIPOS = [
+
+{id:'t1', cat:'grafos', veces:12, total:12, pts:'20 a 28 pts',
+ titulo:'Algoritmo basado en DFS sobre un grafo',
+ sub:'Ejercicio 1 o 2 · apareció en los 12 exámenes',
+ examenes:['2019 Feb · distancia u–v','2019 Ago · componentes iguales','2019 Nov · contar puentes','2022 Nov · componentes de múltiplos','2023 Feb · componente con más de cant','2023 Ago · ¿genera ciclo?','2023 Nov · eliminar puentes','2024 Nov · vértices = aristas','2025 Feb · al menos cant puentes','2025 Ago · cant componentes con múltiplo','2025 Nov · distancia = cant','2026 Feb · componentes de múltiplos'],
+ pide:'Te dan la declaración del grafo (matriz o listas de adyacencia, cambia según el examen) y te piden un algoritmo <b>basado en DFS</b> que responda algo sobre el grafo. Siempre agregan dos frases: «evite hacer recorridas innecesarias» e «implemente también cualquier operación auxiliar que necesite».',
+ molde:[
+  ['La operación principal nunca es el DFS','Es el envoltorio: declara <code>visitado[N]</code>, lo inicializa en FALSE, y desde ahí lanza uno o varios DFS. El DFS es la operación auxiliar que te piden implementar aparte.'],
+  ['El DFS no devuelve: acumula por referencia','Nunca vas a ver un <code>int DFS(...)</code>. Siempre es <code>void</code> y lleva parámetros <code>&amp;</code> donde va acumulando lo que interese (cantidad de vértices, si todos son múltiplos, la distancia).'],
+  ['«Evite recorridas innecesarias» = condición de corte en el while','Eso es lo que separa el 20/20 del 14/20. El <code>while</code> del DFS y el del envoltorio llevan una condición extra que corta apenas la respuesta ya está decidida. Si escribís un <code>for</code> pelado, perdés puntos aunque el resultado sea correcto.'],
+  ['Un vértice por componente conexa','Cuando hay que recorrer todas las componentes, el envoltorio itera <code>i</code> de 0 a N−1 y lanza DFS solo <code>if (!visitado[i])</code>. Cada entrada a ese if es exactamente una componente conexa nueva.']
+ ],
+ code:[
+ {t:'El esqueleto con matriz de adyacencia (memorizalo así)',
+  c:`const int N = ...   /* algún valor > 0 */
+typedef int Grafo [N][N];
+
+boolean Algoritmo (Grafo G, int param)
+{
+    boolean visitado [N];
+    int i;
+    boolean resu = FALSE;
+
+    for (i = 0; i < N; i++)          /* siempre arranca así */
+        visitado[i] = FALSE;
+
+    i = 0;
+    do
+    {
+        if (!visitado[i])            /* una componente conexa nueva */
+        {
+            /* reiniciar los acumuladores de esta componente */
+            DFS (G, i, visitado, /* acumuladores por referencia */);
+            /* evaluar la propiedad sobre esta componente */
+        }
+        i++;
+    }
+    while (i < N && !resu);          /* corte: ya sé la respuesta */
+
+    return resu;
+}
+
+void DFS (Grafo G, int actual, boolean visitado[N], int &acum)
+{
+    visitado[actual] = TRUE;
+    /* lo que haya que hacer al llegar a 'actual' */
+
+    int j = 0;
+    while (j < N && /* todavía vale la pena seguir */)
+    {
+        if (G[actual][j] == 1)
+            if (!visitado[j])
+                DFS (G, j, visitado, acum);
+        j++;
+    }
+}`},
+ {t:'El mismo esqueleto con listas de adyacencia',
+  c:`typedef struct nodoL { int vert;
+                       nodoL * sig;
+                     } Nodo;
+typedef Nodo * ListaAdy;
+const int N = ...;
+typedef ListaAdy Grafo [N];
+
+void DFS (Grafo G, int actual, boolean visitado[N], int &acum)
+{
+    visitado[actual] = TRUE;
+    acum++;
+
+    ListaAdy aux = G[actual];
+    while (aux != NULL && /* condición de corte */)
+    {
+        if (!visitado[aux -> vert])
+            DFS (G, aux -> vert, visitado, acum);
+        aux = aux -> sig;
+    }
+}`},
+ {t:'Variante A — contar o medir componentes conexas (6 de 12 exámenes)',
+  c:`/* 2026 Feb: componentes formadas solo por múltiplos de num */
+int contarComponentesMultiplos (Grafo G, int num)
+{
+    boolean visitado [N], todosMult;
+    int i, cont = 0;
+
+    for (i = 0; i < N; i++)
+        visitado[i] = FALSE;
+
+    for (i = 0; i < N; i++)
+    {
+        if (!visitado[i])
+        {
+            todosMult = TRUE;
+            DFS (G, i, visitado, num, todosMult);
+            if (todosMult)
+                cont++;
+        }
+    }
+    return cont;
+}
+
+void DFS (Grafo G, int actual, boolean visitado[N], int num, boolean &todosMult)
+{
+    visitado[actual] = TRUE;
+    if (actual % num != 0)
+        todosMult = FALSE;
+
+    ListaAdy aux = G[actual];
+    while (aux != NULL && todosMult)      /* corte: ya falló */
+    {
+        if (!visitado[aux -> vert])
+            DFS (G, aux -> vert, visitado, num, todosMult);
+        aux = aux -> sig;
+    }
+}`},
+ {t:'Variante B — puentes (3 de 12 exámenes)',
+  c:`/* La idea es siempre la misma: borrar la arista, ver si w
+   sigue siendo alcanzable desde v, y volver a ponerla. */
+
+boolean EsPuente (Grafo G, int u, int v)
+{
+    boolean visitado [N];
+    for (int i = 0; i < N; i++)
+        visitado[i] = FALSE;
+
+    G[u][v] = 0;  G[v][u] = 0;      /* la saco */
+    DFS (G, u, v, visitado);
+    G[u][v] = 1;  G[v][u] = 1;      /* la repongo */
+
+    return (!visitado[v]);          /* no llegué => era puente */
+}
+
+void DFS (Grafo G, int actual, int v, boolean visitado[N])
+{
+    visitado[actual] = TRUE;
+    int j = 0;
+    while (j < N && !visitado[v])   /* corte: ya llegué a v */
+    {
+        if (G[actual][j] == 1)
+            if (!visitado[j])
+                DFS (G, j, v, visitado);
+        j++;
+    }
+}`},
+ {t:'Variante C — distancia entre u y v en un grafo acíclico (2 de 12)',
+  c:`/* El truco: dist++ se hace AL VOLVER de la recursión,
+   solo en las llamadas que forman parte del camino a v. */
+
+int Distancia (Grafo G, int u, int v)
+{
+    int dist = 0;
+    boolean visitado [N];
+    for (int i = 0; i < N; i++)
+        visitado[i] = FALSE;
+
+    DFS (G, u, v, visitado, dist);
+    return dist;
+}
+
+void DFS (Grafo G, int actual, int v, boolean visitado[N], int &dist)
+{
+    visitado[actual] = TRUE;
+    int j = 0;
+    while (j < N && !visitado[v])
+    {
+        if (G[actual][j] == 1)
+            if (!visitado[j])
+                DFS (G, j, v, visitado, dist);
+        j++;
+    }
+    if ((actual != v) && (visitado[v]))   /* estoy en el camino */
+        dist++;
+}`}
+ ],
+ trampas:[
+  'Poner <code>for</code> en vez de <code>while</code> con corte. El enunciado dice literalmente «evite hacer recorridas innecesarias»: es un punto del puntaje.',
+  'Olvidar inicializar <code>visitado[]</code> en FALSE antes del primer DFS.',
+  'Pasar el acumulador por valor. Si no lleva <code>&amp;</code>, el algoritmo devuelve siempre el valor inicial.',
+  'En el grafo no dirigido con matriz, contar cada arista dos veces cuando lo que se pide es la cantidad de aristas (por eso en 2024 Nov la comparación es <code>vert == aris / 2</code>).'
+ ]},
+
+{id:'t2', cat:'tad', veces:12, total:12, pts:'22 a 40 pts',
+ titulo:'Ejercicio de realidad: TAD → estructuras → primitivas',
+ sub:'Siempre el último ejercicio · apareció en los 12 exámenes',
+ examenes:['2019 Feb · biblioteca','2019 Ago · torneo de dominó','2019 Nov · consultorio','2022 Nov · comercio','2023 Feb · biblioteca musical','2023 Ago · comercio','2023 Nov · excursiones','2024 Nov · libros de texto','2025 Feb · club de socios','2025 Ago · club de campo','2025 Nov · tesis','2026 Feb · estudio notarial'],
+ pide:'Un párrafo describiendo una realidad (socios, libros, expedientes, discos…) y tres o cuatro requerimientos. Después, siempre las mismas cuatro partes: <b>a)</b> análisis de TAD justificado, <b>b)</b> implementar un requerimiento usando <i>solo</i> primitivas y selectoras, <b>c)</b> elegir estructuras de datos justificando, <b>d)</b> implementar las primitivas usadas en b).',
+ molde:[
+  ['a) El análisis es casi siempre el mismo','Cada «cosa» de la realidad con datos heterogéneos es un <b>Producto Cartesiano</b>. La colección principal es un <b>Diccionario</b> en 11 de los 12 exámenes (siempre hay una cédula, un código o un número que identifica). Si adentro hay una sub-colección numerada consecutivamente, es una <b>Secuencia</b>. Si lo único que importa es el orden de llegada, es una <b>Queue</b>.'],
+  ['b) Tiene una única forma posible','Empieza poniendo la bandera de error, pregunta con <code>Member</code>, recupera con <code>Find</code>, y de ahí en adelante solo selectoras. No podés recorrer estructuras: solo existen las primitivas.'],
+  ['c) Acá se juega el ejercicio','La elección de estructura se justifica con dos datos del enunciado: la <b>cota</b> (¿dice «aproximadamente 300»? ¿«no hay cota»?) y si algún requerimiento pide <b>listar ordenado</b>. Con eso la respuesta es mecánica: mirá la tabla de abajo.'],
+  ['d) Member y Find, otra vez','Las primitivas que caen son casi siempre <code>Member</code> y <code>Find</code>, y su código depende solo de la estructura que elegiste en c). Está en el molde n.º 5.']
+ ],
+ tabla:[
+  ['El enunciado dice…','Estructura','Por qué'],
+  ['«aproximadamente 300 socios» y solo se busca por clave','<b>Hash</b> con B = 300','Búsqueda O(1) en caso promedio; hay estimación para dimensionar las cubetas'],
+  ['algún requerimiento pide <b>listar ordenado por código</b>','<b>AVL</b>','Mantiene el orden por clave y busca en O(log n) por estar balanceado'],
+  ['las claves son un rango acotado de naturales (1 a 400)','<b>Mapeo</b>','Acceso directo por índice: O(1) en el <i>peor</i> caso, no promedio'],
+  ['sub-colección sin cota, se agrega siempre al final','<b>LPPF</b>','Insertar por el final en O(1)'],
+  ['sub-colección con cota máxima («no más de 30 capítulos»)','<b>Arreglo con tope</b>','Hay cota y se accede al k-ésimo en O(1)'],
+  ['interesa el orden de llegada, se saca por el principio','<b>LPPF</b> como Queue','Insback y Remfront ambos O(1)']
+ ],
+ code:[
+ {t:'b) El molde universal del requerimiento con primitivas',
+  c:`void Requerimiento (Diccio diccio, int clave, tipo &salida, boolean &ok)
+{
+    ok = FALSE;                          /* siempre arranca así */
+
+    if (Member (diccio, clave))
+    {
+        Elemento e = Find (diccio, clave);
+        SecCosas sec = DarCosas (e);     /* selectora */
+
+        int tam = Largo (sec);
+        int k = 1;
+        while (k <= tam && /* corte si ya lo encontré */)
+        {
+            Cosa c = K_esimo (sec, k);
+            if (DarAlgo (c) == loQueBusco)
+                salida = DarOtraCosa (c);
+            k++;
+        }
+        ok = TRUE;
+    }
+}`},
+ {t:'c) Los cuatro typedef que hay que saber de memoria',
+  c:`/* ---- Hash para un Diccionario ---- */
+typedef struct nodoHash { Elemento info;
+                          nodoHash * sig;
+                        } NodoH;
+typedef NodoH * Lista;
+const int B = 300;              /* la cantidad estimada del enunciado */
+typedef Lista Diccio [B];
+
+/* ---- AVL para un Diccionario (cuando hay que listar ordenado) ---- */
+typedef struct nodoAVL { Elemento info;
+                         nodoAVL * hizq;
+                         nodoAVL * hder;
+                         int altura;
+                       } NodoA;
+typedef NodoA * Diccio;
+
+/* ---- Mapeo para un Diccionario (claves en un rango acotado) ---- */
+typedef struct { boolean existe;
+                 Elemento info;
+               } Celda;
+const int N = 400;
+typedef Celda Diccio [N];
+
+/* ---- LPPF para una Secuencia ---- */
+typedef struct nodoL { Cosa info;
+                       nodoL * sig;
+                     } NodoL;
+typedef struct { NodoL * prim;
+                 NodoL * ulti;
+               } SecCosas;
+
+/* ---- Arreglo con tope para una Secuencia acotada ---- */
+const int MAX = 30;
+typedef struct { Cosa arre [MAX];
+                 int tope;
+               } SecCosas;`},
+ {t:'a) Cómo se escribe el análisis (copiá la redacción)',
+  c:`Cada libro será modelado con un Producto Cartesiano, dado que posee una
+cantidad fija de características relevantes que no necesariamente son
+todas del mismo tipo. Lo mismo sucede con cada capítulo.
+
+Todos los libros se almacenarán en un Diccionario debido a que los
+requerimientos 1 y 3 exigen hacer búsquedas por clave (el código que
+identifica al libro). A su vez, todos los capítulos de un libro se
+almacenarán en una Secuencia debido a que sus números son consecutivos
+e interesa recorrerlos en orden. No se opta por Stack ni Queue porque
+no permiten el acceso a elementos en el medio de la secuencia.
+
+    Libros    = Diccionario (Libro)
+    Libro     = Producto Cartesiano (Código, Título, Autor, Capítulos)
+    Capítulos = Secuencia (Capítulo)
+    Capítulo  = Producto Cartesiano (Número, Título, Páginas)
+    Código, Número, Páginas = Entero
+    Título, Autor           = String`}
+ ],
+ trampas:[
+  'Usar un <code>for</code> o acceder a <code>diccio[i]</code> en la parte b). Ahí <b>solo</b> existen primitivas y selectoras: tocar la estructura invalida el ejercicio.',
+  'Justificar la estructura con «porque es más rápida». La justificación tiene que citar el dato del enunciado: la cota, o el requerimiento que pide orden.',
+  'Elegir Hash cuando algún requerimiento pide listar ordenado. Es el error que el 2022 Nov evalúa explícitamente en la parte c).',
+  'Olvidar la precondición en <code>Find</code>: siempre lleva <code>/* Precondición: la clave es miembro del diccionario */</code>.'
+ ]},
+
+{id:'t3', cat:'listas', veces:8, total:12, pts:'15 a 24 pts',
+ titulo:'Variante de lista: definirla y programar sus operaciones',
+ sub:'Ejercicio 2 o 3 · 8 de 12 exámenes',
+ examenes:['2019 Feb · LDEC','2019 Nov · LDEPPF','2023 Feb · LDEPPF','2023 Ago · LDEC','2023 Nov · arreglo con tope','2024 Nov · LDEPPF','2025 Ago · LPPF','2026 Feb · LCPPF'],
+ pide:'Te nombran una variante (a veces una que no viste en el curso, definida en el propio enunciado) y piden: <b>a)</b> el <code>typedef</code>, <b>b)</b> dibujar cómo queda en memoria con valores concretos, <b>c)</b> dos operaciones en forma <b>no recursiva y sin auxiliares</b>, <b>d)</b> a veces, el orden de cada una.',
+ molde:[
+  ['La estructura sale de las siglas','<b>D</b> = doblemente encadenada, agrega <code>ant</code> al nodo. <b>C</b> = circular, el <code>sig</code> del último apunta al primero. <b>PPF</b> = puntero al principio y al final, la lista es un struct con <code>prim</code> y <code>ulti</code> en vez de un puntero pelado.'],
+  ['Insertar siempre tiene dos casos','Lista vacía (hay que dejar <code>prim</code> y <code>ulti</code> apuntando al nuevo) y lista no vacía. Olvidar el caso vacío es el error más frecuente.'],
+  ['En circulares, el recorrido es do-while','Con <code>while (aux != L)</code> nunca entrás, porque arrancás justo en <code>L</code>. Va <code>do { … } while (aux != L.prim &amp;&amp; !esta);</code>'],
+  ['El último enlace se cierra al final','En una LCPPF, después de acomodar todo, siempre termina con <code>nuevo -&gt; sig = L.prim;</code>']
+ ],
+ code:[
+ {t:'LCPPF — el ejercicio textual de 2026 Feb',
+  c:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                     } Nodo;
+typedef struct { Nodo * prim;
+                 Nodo * ulti;
+               } LCPPF;
+
+void Insback (LCPPF &L, int valor)
+{
+    Nodo * nuevo = new Nodo;
+    nuevo -> info = valor;
+
+    if (L.ulti == NULL)          /* caso lista vacía */
+    {
+        L.ulti = nuevo;
+        L.prim = nuevo;
+    }
+    else
+    {
+        L.ulti -> sig = nuevo;
+        L.ulti = nuevo;
+    }
+    nuevo -> sig = L.prim;       /* cierra el círculo, siempre */
+}
+
+boolean Pertenece (LCPPF L, int valor)
+{
+    boolean esta = FALSE;
+    if (L.prim != NULL)
+    {
+        Nodo * aux = L.prim;
+        do
+        {
+            if (aux -> info == valor)
+                esta = TRUE;
+            else
+                aux = aux -> sig;
+        }
+        while (aux != L.prim && !esta);
+    }
+    return esta;
+}`},
+ {t:'LDEC — Insback y Sumar (2023 Ago; 2019 Feb pide Insfront y Desplegar)',
+  c:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                       nodoL * ant;
+                     } nodo;
+typedef nodo * LDEC;
+
+void Insback (LDEC &L, int valor)
+{
+    LDEC nuevo = new nodo;
+    nuevo -> info = valor;
+    if (L == NULL)
+    {
+        L = nuevo;
+        nuevo -> sig = L;
+        nuevo -> ant = L;        /* se apunta a sí mismo */
+    }
+    else
+    {
+        LDEC aux = L -> ant;     /* el último, en O(1) */
+        aux -> sig = nuevo;
+        nuevo -> ant = aux;
+        nuevo -> sig = L;
+        L -> ant = nuevo;
+    }
+}
+/* Insfront es idéntica pero terminando con L = nuevo; */
+
+int Sumar (LDEC L)
+{
+    int sum = 0;
+    if (L != NULL)
+    {
+        LDEC aux = L;
+        while (aux -> sig != L)  /* llega hasta el penúltimo */
+        {
+            sum = sum + aux -> info;
+            aux = aux -> sig;
+        }
+        sum = sum + aux -> info; /* y suma el último aparte */
+    }
+    return sum;
+}`},
+ {t:'LPPF — las dos operaciones de 2025 Ago',
+  c:`float PromedioCantImpares (LPPF L, int cant)
+/* Precondición: cant > 0 */
+{
+    int impares = 0;
+    float suma = 0.0, prom = 0.0;
+
+    while (L.prim != NULL && impares < cant)   /* doble corte */
+    {
+        if (L.prim -> info % 2 != 0)
+        {
+            suma = suma + L.prim -> info;
+            impares = impares + 1;
+        }
+        L.prim = L.prim -> sig;   /* L es copia local: puedo moverla */
+    }
+    if (impares > 0)
+        prom = suma / impares;
+    return prom;
+}
+
+void BorrarLuegoValor (LPPF &L, int valor)
+/* Precondición: valor pertenece a la lista */
+{
+    Nodo * aux = L.prim;
+    while (valor != aux -> info)
+        aux = aux -> sig;
+
+    Nodo * temp = aux -> sig;
+    aux -> sig = NULL;
+    L.ulti = aux;                 /* no olvidar reubicar ulti */
+
+    while (temp != NULL)          /* liberar la memoria */
+    {
+        aux = temp;
+        temp = temp -> sig;
+        delete aux;
+    }
+}`},
+ {t:'LDEPPF — invertir (2023 Feb) y construir (2024 Nov)',
+  c:`void Invertir (LDEPPF &L)
+{
+    Nodo * prim = L.prim;
+    Nodo * ulti = L.ulti;
+
+    if (prim != NULL)
+        if (prim -> sig != NULL)
+            while ((prim != ulti) && (prim -> sig != ulti))
+            {
+                int aux = prim -> info;      /* intercambia los datos,
+                                                no los nodos */
+                prim -> info = ulti -> info;
+                ulti -> info = aux;
+                prim = prim -> sig;
+                ulti = ulti -> ant;
+            }
+}`}
+ ],
+ trampas:[
+  'No actualizar <code>ulti</code> al borrar por el final, o no actualizar <code>prim</code> al vaciar la lista.',
+  'Usar <code>while</code> en vez de <code>do-while</code> para recorrer una circular: el ciclo no se ejecuta ni una vez.',
+  'En LDE, olvidar el <code>ant</code> del nodo siguiente. Cada inserción toca <b>cuatro</b> punteros, no dos.',
+  'Que te pidan «no recursiva» y resolverlo con recursión, o al revés (2019 Nov pide el Deque explícitamente <i>recursivo</i>).'
+ ]},
+
+{id:'t4', cat:'orden', veces:8, total:12, pts:'15 a 30 pts',
+ titulo:'Órdenes: calcularlos, justificarlos o decidir si un algoritmo puede existir',
+ sub:'Ejercicio 1 o parte final de otro · 8 de 12 exámenes',
+ examenes:['2019 Feb · orden de dos operaciones','2019 Ago · peor caso y cómo bajarlo','2022 Nov · múltiple opción','2023 Feb · múltiple opción','2023 Ago · orden de suma y producto','2024 Nov · ¿puede existir? × 4','2025 Feb · orden con dos estructuras','2026 Feb · ¿puede existir? × 4'],
+ pide:'En el formato nuevo (2024 y 2026, los dos más recientes) te dan cuatro enunciados del tipo «un algoritmo de O(f(n)) que, dada tal estructura, haga tal cosa» y por cada uno pedís: escribir el <code>typedef</code>, decir <b>si puede existir o no</b>, e implementarlo probando el orden — o explicar por qué es imposible.',
+ molde:[
+  ['La pregunta real es: ¿hace falta recorrer?','Si para resolver el problema hay que mirar todos los elementos, el algoritmo <b>no puede</b> ser menos que O(n). Si la respuesta está guardada o se llega en una cantidad fija de pasos, es O(1).'],
+  ['El tope es la respuesta a casi todo','En un arreglo con tope, «cuántos hay» es <code>return a.tope</code> y «borrar el último» es <code>a.tope--</code>. Los dos son O(1) y los dos ya cayeron.'],
+  ['El contraejemplo clásico: borrar el último de una LPPF','Tenés el puntero <code>ulti</code>, así que llegar es O(1) — pero para que el <i>anterior</i> quede apuntando a NULL hay que recorrer toda la lista. No puede ser O(1). En una LDEPPF sí, porque tenés <code>ant</code>.'],
+  ['Justificar siempre con las tres propiedades','Polinomio (se queda el mayor grado), secuencia (dos bloques seguidos: gana el mayor) y anidamiento (se multiplican). Escribir «es O(n²) porque hay dos for anidados» sin nombrar la propiedad pierde puntos.']
+ ],
+ tabla:[
+  ['Enunciado que ya cayó','¿Existe?','Por qué'],
+  ['O(1): borrar el último valor de un <b>arreglo con tope</b>','Sí','<code>a.tope--</code>, una sola instrucción'],
+  ['O(1): cantidad de valores de un <b>arreglo con tope</b>','Sí','<code>return a.tope</code>'],
+  ['O(1): borrar el último valor de una <b>LPPF</b>','<b>No</b>','Hay que recorrer para dejar el anterior en NULL'],
+  ['O(n): saber si un <b>mapeo</b> está vacío','Sí','Una recorrida simple, peor caso cuando está vacío'],
+  ['O(n²): saber si un <b>mapeo</b> tiene repetidos','Sí','Dos do-while anidados, por regla de anidamiento'],
+  ['O(n): listar una <b>LDE</b> al revés','Sí','n para llegar al final, n para volver: 2n sigue siendo O(n)'],
+  ['O(log n): listar las hojas de un <b>ABB</b> ordenadas','<b>No</b>','Hay que visitar los n nodos para saber cuáles son hojas']
+ ],
+ code:[
+ {t:'Cómo se redacta la respuesta completa (formato 2026)',
+  c:`/* b) Un algoritmo de O(1) que, dada una LPPF no vacía de enteros,
+      elimine su último valor. */
+
+typedef struct nodoL { int info;
+                       nodoL * sig;
+                     } Nodo;
+typedef struct { Nodo * prim;
+                 Nodo * ulti;
+               } LPPF;
+
+/* El algoritmo solicitado NO puede existir. Si bien es posible
+   eliminar el último nodo accediéndolo directamente a través del
+   puntero ulti, sería necesario recorrer todos los nodos para que
+   el anterior a él quede apuntando a NULL, lo cual implicaría
+   necesariamente una recorrida de O(n). */`},
+ {t:'Bajar el orden de un algoritmo (2019 Ago) — sacar la llamada del ciclo',
+  c:`/* ANTES: O(n²). SumarValores es O(n) y se invoca dentro del while. */
+boolean Algoritmo (Lista L)
+{
+    boolean hay = FALSE;
+    Lista aux = L;
+    while (!hay && aux != NULL)
+    {
+        int sum = SumarValores (L);        /* <-- O(n) adentro */
+        if (sum % (aux -> info) == 0)
+            hay = TRUE;
+        else
+            aux = aux -> sig;
+    }
+    return hay;
+}
+
+/* DESPUÉS: O(n). La suma no cambia entre iteraciones. */
+boolean Algoritmo (Lista L)
+{
+    boolean hay = FALSE;
+    Lista aux = L;
+    int sum = SumarValores (L);            /* una sola vez */
+    while (!hay && aux != NULL)
+    {
+        if (sum % (aux -> info) == 0)
+            hay = TRUE;
+        else
+            aux = aux -> sig;
+    }
+    return hay;
+}
+/* Ahora el while es O(n) y la llamada previa es O(n): una secuencia
+   de dos bloques de O(n) es O(n) por la propiedad de la secuencia. */`}
+ ],
+ trampas:[
+  'Contestar «sí puede existir» y después implementar algo que recorre. La implementación tiene que <i>probar</i> el orden pedido.',
+  'Confundir tamaño de entrada con cantidad de parámetros: en un mapeo de TAM celdas, n = TAM aunque solo haya tres valores cargados.',
+  'Decir que O(2n) es distinto de O(n).',
+  'En múltiple opción, contestar sin estar seguro: una respuesta incorrecta resta 1 punto, dejarla en blanco vale 0.'
+ ]},
+
+{id:'t5', cat:'tad', veces:6, total:12, pts:'parte del ejercicio de TAD',
+ titulo:'Implementar Member y Find según la estructura elegida',
+ sub:'Parte d) del ejercicio de realidad · 6 de 12 exámenes',
+ examenes:['2019 Ago · Hash','2023 Ago · Hash','2023 Nov · Hash','2025 Ago · Mapeo','2025 Nov · Hash','2026 Feb · AVL'],
+ pide:'«Implemente cada una de las primitivas utilizadas en la parte b) considerando las estructuras de la parte c). Especifique toda precondición necesaria.» En la práctica son <code>Member</code> y <code>Find</code>, más alguna de <code>Insert</code>, <code>Largo</code> o <code>K_esimo</code>.',
+ molde:[
+  ['Es código para memorizar, no para pensar','Hay tres versiones y ya no cambian: Hash (con dispersión y recorrida de la cubeta), AVL (recursivo, como un ABB), Mapeo (acceso directo).'],
+  ['Find siempre lleva precondición','<code>/* Precondición: el elemento con esa clave es miembro del diccionario */</code>. Sin eso, falta un punto.'],
+  ['Find no repite el chequeo de Member','Como ya sabés que está, el <code>while</code> de Find no necesita preguntar por NULL — la precondición te lo garantiza. Eso es «evitar recorridas innecesarias».'],
+  ['La función de dispersión se supone dada','Nunca la tenés que escribir: se usa <code>h(clave)</code> y listo.']
+ ],
+ code:[
+ {t:'Las tres versiones, una al lado de la otra',
+  c:`/* ============ HASH ============ */
+boolean Member (Diccio diccio, int clave)
+{
+    int cubeta = h (clave);
+    boolean existe = FALSE;
+    Lista aux = diccio [cubeta];
+    while (aux != NULL && !existe)
+    {
+        if (clave == DarClave (aux -> info))
+            existe = TRUE;
+        else
+            aux = aux -> sig;
+    }
+    return existe;
+}
+
+/* Precondición: el elemento con esa clave es miembro del diccionario */
+Elemento Find (Diccio diccio, int clave)
+{
+    int cubeta = h (clave);
+    Lista aux = diccio [cubeta];
+    while (clave != DarClave (aux -> info))
+        aux = aux -> sig;
+    return (aux -> info);
+}
+
+/* ============ AVL / ABB ============ */
+boolean Member (Diccio diccio, int clave)
+{
+    if (diccio == NULL)
+        return FALSE;
+    else
+        if (clave == DarClave (diccio -> info))
+            return TRUE;
+        else
+            if (clave < DarClave (diccio -> info))
+                return Member (diccio -> hizq, clave);
+            else
+                return Member (diccio -> hder, clave);
+}
+
+/* Precondición: el elemento con esa clave es miembro del diccionario */
+Elemento Find (Diccio diccio, int clave)
+{
+    if (clave == DarClave (diccio -> info))
+        return (diccio -> info);
+    else
+        if (clave < DarClave (diccio -> info))
+            return Find (diccio -> hizq, clave);
+        else
+            return Find (diccio -> hder, clave);
+}
+
+/* ============ MAPEO (claves 1..N) ============ */
+boolean Member (Diccio diccio, int num)
+{
+    return (diccio [num - 1].existe);
+}
+
+/* Precondición: el elemento no es miembro del diccionario */
+void Insert (Diccio &diccio, Elemento e)
+{
+    int num = DarNumero (e);
+    diccio[num - 1].existe = TRUE;
+    diccio[num - 1].info = e;
+}`},
+ {t:'Las primitivas de Secuencia que acompañan',
+  c:`/* Sobre arreglo con tope */
+int Largo (SecCosas sec)
+{
+    return (sec.tope);
+}
+
+/* Precondición: k <= Largo (sec) */
+Cosa K_esimo (SecCosas sec, int k)
+{
+    return (sec.arre[k-1]);      /* ojo el -1 */
+}
+
+/* Sobre LPPF */
+boolean EsVacia (SecCosas sec)
+{
+    return (sec.prim == NULL);
+}`}
+ ],
+ trampas:[
+  'Escribir <code>h(cedula)</code> cuando el parámetro se llama <code>codigo</code> (error que aparece hasta en las soluciones oficiales de 2023 Ago).',
+  'En el Mapeo con claves de 1 a N, olvidar el <code>- 1</code> del índice.',
+  'Repetir el chequeo de existencia dentro de Find habiendo puesto la precondición.'
+ ]},
+
+{id:'t6', cat:'grafos', veces:4, total:12, pts:'18 a 25 pts',
+ titulo:'Grafo definido formalmente: dibujar, representar y demostrar por inducción',
+ sub:'Siempre el ejercicio 1 · 4 de 12 exámenes',
+ examenes:['2019 Feb · inducción suma de grados','2019 Nov · completo ⇒ conexo','2025 Feb · u+v par, dos componentes completas','2025 Nov · dirigido u<v, inducción'],
+ pide:'Te definen un grafo por comprensión (por ejemplo V = {x∈ℕ / 0 ≤ x &lt; n} y A = {(u,v) / u &lt; v}) y piden dibujarlo para varios valores de n, demostrar una propiedad <b>por inducción</b>, y escribir un procedimiento que <b>construya</b> el grafo en la matriz sin intervención del usuario.',
+ molde:[
+  ['El dibujo primero, siempre','Dibujá el caso chico antes de intentar la demostración: la fórmula sale sola mirando cuántas aristas se agregan al pasar de n a n+1.'],
+  ['La inducción tiene cuatro partes con nombre','Paso base (n = 1), hipótesis inductiva, tesis inductiva, y demostración. Escribí los cuatro rótulos explícitamente: cada uno vale.'],
+  ['El paso inductivo es siempre «agrego un vértice»','Y la pregunta es cuántas aristas nuevas trae. En el grafo dirigido con u &lt; v trae n aristas; en el completo, n también.'],
+  ['Construir el grafo = doble for con la condición del enunciado','Literalmente se copia la condición matemática dentro del if. Es el ejercicio más mecánico de todo el examen.']
+ ],
+ code:[
+ {t:'Construir el grafo sin intervención del usuario',
+  c:`/* 2025 Nov: A = { (u,v) / u < v }  -- dirigido */
+const int N = ...;              /* algún valor mayor que cero */
+typedef int Grafo [N][N];
+
+void Crear (Grafo &G)
+{
+    for (int u = 0; u < N; u++)
+        for (int v = 0; v < N; v++)
+        {
+            if (u < v)                    /* la condición, tal cual */
+                G[u][v] = 1;
+            else
+                G[u][v] = 0;
+        }
+}
+
+/* 2025 Feb: A = { {u,v} / (u+v) es par y u != v }  -- no dirigido */
+void ConstruirGrafo (Grafo &G)
+{
+    for (int u = 0; u < M; u++)
+        for (int v = 0; v < M; v++)
+        {
+            if (((u + v) % 2 == 0) && (u != v))
+                G[u][v] = 1;
+            else
+                G[u][v] = 0;
+        }
+}`},
+ {t:'La demostración por inducción, con la estructura que corrigen',
+  c:`Demostrar que ||G|| = (n² – n) / 2
+
+Paso base: para n = 1 hay que probar que ||G|| = (1² – 1) / 2.
+    Demostración: con 1 vértice el grafo tiene 0 aristas,
+    verificándose que 0 = (1² – 1) / 2.
+
+Paso inductivo:
+    Hipótesis inductiva: si G tiene n vértices, ||G|| = (n² – n) / 2.
+    Tesis inductiva: si G' tiene n+1 vértices,
+                     ||G'|| = ((n+1)² – (n+1)) / 2.
+
+    Demostración: ||G'|| = ||G|| + n, pues para obtener G' hay que
+    agregar n aristas a G. Por HI, ||G|| = (n² – n) / 2. Entonces:
+
+      ||G'|| = (n² – n)/2 + n
+             = (n² – n)/2 + 2n/2
+             = (n² – n + 2n)/2
+             = (n² + 2n + 1 – n – 1)/2
+             = ((n+1)² – (n+1)) / 2      que es la tesis.`}
+ ],
+ trampas:[
+  'Saltear el paso base porque «es obvio».',
+  'No escribir la tesis inductiva antes de demostrarla: hay que decir a dónde se quiere llegar.',
+  'Cuando piden un contraejemplo (2019 Nov), dar una explicación en vez de un grafo concreto dibujado. El contraejemplo se dibuja.'
+ ]},
+
+{id:'t7', cat:'listas', veces:3, total:12, pts:'25 a 34 pts',
+ titulo:'TAD Secuencia, Queue o Deque: resolver con primitivas y después implementarlas',
+ sub:'3 de 12 exámenes, pero es el ejercicio más largo cuando cae',
+ examenes:['2019 Nov · Deque, recursivo, con LDEPPF','2023 Nov · Deque, con arreglo con tope','2025 Feb · Queue, con arreglo y con LPPF'],
+ pide:'<b>a)</b> Resolver un problema usando <i>solo</i> primitivas del TAD. <b>b)</b> Definir una estructura concreta e implementar cada primitiva usada. <b>c)</b> Calcular el orden del algoritmo de a) con esa implementación. <b>d)</b> Rehacer b) y c) con <i>otra</i> estructura y comparar.',
+ molde:[
+  ['El truco de a): usar el propio dato como marca de fin','En la Queue de 2025 Feb todos los valores son impares y hay que duplicarlos. Como no se puede saber cuántos hay sin primitivas de tamaño, se saca del frente, se inserta al final duplicado, y se para cuando el frente ya es par: eso significa que dio la vuelta completa.'],
+  ['O recursión sobre el TAD','En el Deque: sacar los dos extremos, llamarse recursivamente sobre lo que queda, y al volver reinsertar. Hay que llevar una bandera para el caso de un único elemento.'],
+  ['La parte c) es la moraleja del ejercicio','Con arreglo con tope, <code>RemFront</code> es O(n) porque hay que correr todo el arreglo, y el algoritmo queda O(n²). Con LPPF las tres primitivas son O(1) y el mismo algoritmo queda O(n). La estructura cambia el orden sin tocar el algoritmo.']
+ ],
+ code:[
+ {t:'a) Resolver con primitivas — el marcador de fin (2025 Feb)',
+  c:`void DuplicarValores (Queue &q)
+/* Precondición: la queue no es vacía y todos sus valores son impares */
+{
+    int aux;
+    boolean termine = FALSE;
+    do
+    {
+        aux = Front (q);
+        if (aux % 2 == 0)        /* par => ya lo dupliqué antes */
+            termine = TRUE;
+        else
+        {
+            RemFront (q);
+            InsBack (q, 2 * aux);
+        }
+    }
+    while (!termine);
+}`},
+ {t:'b) y d) Las mismas primitivas sobre dos estructuras',
+  c:`/* ---- Con arreglo con tope ---- */
+const int N = ...;
+typedef struct { int arre [N];
+                 int tope;
+               } Queue;
+
+int Front (Queue q)          { return (q.arre[0]); }        /* O(1) */
+void InsBack (Queue &q, int e)
+{
+    q.arre[q.tope] = e;
+    q.tope++;                                                /* O(1) */
+}
+void RemFront (Queue &q)                                     /* O(n) */
+{
+    for (int i = 0; i < q.tope-1; i++)
+        q.arre[i] = q.arre[i+1];
+    q.tope--;
+}
+/* => DuplicarValores queda de O(n²) por anidamiento */
+
+/* ---- Con LPPF ---- */
+typedef struct { nodo * prim;
+                 nodo * ulti;
+               } Queue;
+
+int Front (Queue q)          { return q.prim -> info; }      /* O(1) */
+void RemFront (Queue &q)                                     /* O(1) */
+{
+    nodo * aux = q.prim -> sig;
+    delete (q.prim);
+    q.prim = aux;
+    if (aux == NULL)
+        q.ulti = NULL;
+}
+/* => el mismo algoritmo ahora es de O(n) */`}
+ ],
+ trampas:[
+  'Usar una colección auxiliar. Está prohibido explícitamente: solo variables de tipos básicos.',
+  'En el Deque recursivo, no contemplar el caso de que quede un solo elemento y terminar duplicándolo.',
+  'Olvidar poner <code>q.ulti = NULL</code> cuando la lista queda vacía tras un RemFront.'
+ ]},
+
+{id:'t8', cat:'orden', veces:4, total:12, pts:'8 a 23 pts',
+ titulo:'Mapeo: cuándo elegirlo y cómo recorrerlo',
+ sub:'4 de 12 exámenes, casi siempre como parte de otro ejercicio',
+ examenes:['2019 Ago · representar una función f','2022 Nov · múltiple opción','2024 Nov · repetidos en O(n²)','2025 Ago · Diccionario sobre Mapeo','2026 Feb · ¿está vacío? en O(n)'],
+ pide:'O bien te dan una realidad donde el dominio es «un subrango de naturales empezando en cero» y hay que darse cuenta de que la estructura es un Mapeo, o bien te piden operaciones sobre uno ya definido.',
+ molde:[
+  ['La pista que delata al Mapeo','El enunciado dice que las claves son números en un rango acotado y conocido (1 a 400, 0 a N−1), aunque no todos estén usados. Ahí el Mapeo da búsqueda O(1) en el <b>peor</b> caso, mejor que el Hash que la da en el promedio.'],
+  ['La celda tiene dos campos','<code>existe</code> y <code>info</code>. Toda recorrida pregunta primero por <code>existe</code>.'],
+  ['Recorrer un mapeo es O(n) con n = TAM','No importa cuántos valores haya cargados: el tamaño de la entrada es la cantidad de celdas.']
+ ],
+ code:[
+ {t:'La estructura y las operaciones que ya cayeron',
+  c:`typedef struct { boolean existe;
+                 int info;
+               } Celda;
+const int TAM = ...;
+typedef Celda Mapeo [TAM];
+
+/* ¿está vacío?  O(n) -- 2026 Feb */
+boolean EstaVacio (Mapeo M)
+{
+    boolean vacio = TRUE;
+    int i = 0;
+    do
+    {
+        if (M[i].existe)
+            vacio = FALSE;
+        else
+            i++;
+    }
+    while (vacio && i < TAM);
+    return vacio;
+}
+
+/* ¿es total?  (todas las celdas ocupadas) -- 2019 Ago */
+boolean EsTotal (Mapeo M)
+{
+    int i = 0;
+    while (i < TAM && M[i].existe)
+        i++;
+    return (i == TAM);
+}
+
+/* ¿es inyectiva? / ¿hay repetidos?  O(n²) -- 2019 Ago y 2024 Nov */
+boolean EsInyectiva (Mapeo M)
+{
+    boolean es = TRUE;
+    int i = 0, j;
+    do
+    {
+        if (M[i].existe)
+        {
+            j = i + 1;
+            do
+            {
+                if (M[j].existe)
+                    es = (M[j].info != M[i].info);
+                j++;
+            }
+            while (es && j < TAM);
+        }
+        i++;
+    }
+    while (es && i < TAM - 1);
+    return es;
+}`}
+ ],
+ trampas:[
+  'Recorrer sin preguntar por <code>existe</code> y comparar basura.',
+  'Decir que el tamaño de la entrada es la cantidad de valores cargados.',
+  'Elegir Hash cuando las claves ya son un índice: el Mapeo es más simple y tiene mejor peor caso.'
+ ]},
+
+{id:'t9', cat:'arboles', veces:3, total:12, pts:'18 a 24 pts',
+ titulo:'Árboles: N-ario con búsqueda anidada, o pasar un Hash a un ABB',
+ sub:'3 de 12 exámenes · el N-ario cayó dos veces idéntico',
+ examenes:['2022 Nov · cuántos pertenecen','2025 Ago · copiar Hash a ABB ordenado','2025 Nov · cuántos pertenecen (el mismo de 2022)'],
+ pide:'El de árbol N-ario es literalmente el mismo enunciado en 2022 y 2025: dados dos árboles N-arios, contar cuántos valores del primero pertenecen también al segundo. El otro pide volcar todos los elementos de un Hash a un ABB de modo que queden ordenados por clave.',
+ molde:[
+  ['N-ario: dos recursiones, una adentro de la otra','La de afuera recorre el primer árbol entero (no se puede cortar: hay que ver todos los valores). La de adentro busca en el segundo y sí se corta apenas encuentra.'],
+  ['El for sobre los hijos siempre va hasta topeHijos','No hasta N. <code>topeHijos</code> dice cuántos hijos tiene <i>ese</i> nodo.'],
+  ['Hash → ABB: no hace falta ordenar nada','Insertar en un ABB respetando la propiedad de búsqueda ya los deja ordenados; después se listan en inorden. Es el punto del ejercicio.']
+ ],
+ code:[
+ {t:'Árbol N-ario — el ejercicio que cayó dos veces',
+  c:`const int N = ...;
+typedef struct nodoA { int info;
+                       nodoA * hijos[N];
+                       int topeHijos;
+                     } Nodo;
+typedef Nodo * Arbol_N_ario;
+
+int CuantosPertenecen (Arbol_N_ario a1, Arbol_N_ario a2)
+{
+    if (a1 == NULL)
+        return 0;
+    else
+    {
+        int cant = 0;
+        if (Pertenece (a2, a1 -> info))
+            cant = 1;
+        for (int i = 0; i < a1 -> topeHijos; i++)
+            cant = cant + CuantosPertenecen (a1 -> hijos[i], a2);
+        return cant;
+    }
+}
+
+boolean Pertenece (Arbol_N_ario a2, int valor)
+{
+    if (a2 == NULL)
+        return FALSE;
+    else
+        if (valor == a2 -> info)
+            return TRUE;
+        else
+        {
+            boolean esta = FALSE;
+            int i = 0;
+            while (!esta && i < a2 -> topeHijos)   /* corta al hallar */
+            {
+                if (Pertenece (a2 -> hijos[i], valor))
+                    esta = TRUE;
+                else
+                    i++;
+            }
+            return esta;
+        }
+}`},
+ {t:'Hash → ABB ordenado (2025 Ago)',
+  c:`void HashHaciaABB (Hash tabla, ABB &arbol)
+/* Precondición: el árbol viene inicialmente vacío */
+{
+    for (int i = 0; i < B; i++)
+    {
+        Lista aux = tabla[i];
+        while (aux != NULL)
+        {
+            InsertarABB (arbol, aux -> info);
+            aux = aux -> sig;
+        }
+    }
+}
+
+void InsertarABB (ABB &arbol, T elem)
+{
+    if (arbol == NULL)
+    {
+        arbol = new nodoABB;
+        arbol -> info = elem;
+        arbol -> hizq = NULL;
+        arbol -> hder = NULL;
+    }
+    else
+        if (DarClave (elem) < DarClave (arbol -> info))
+            InsertarABB (arbol -> hizq, elem);
+        else
+            InsertarABB (arbol -> hder, elem);
+}`}
+ ],
+ trampas:[
+  'Intentar cortar la recursión del primer árbol. Hay que visitarlo entero.',
+  'Iterar los hijos hasta N en vez de hasta <code>topeHijos</code>.',
+  'Pasar el ABB sin <code>&amp;</code> en InsertarABB: el árbol nunca crece.'
+ ]},
+
+{id:'t10', cat:'grafos', veces:2, total:12, pts:'22 a 28 pts',
+ titulo:'Matrices: producto, suma y representaciones alternativas',
+ sub:'2 de 12 exámenes',
+ examenes:['2023 Ago · suma y producto a mano y en C++','2023 Nov · matriz triangular en un arreglo'],
+ pide:'O bien calcular a mano la suma y el producto de dos matrices 3×3, implementarlas y dar sus órdenes; o bien deducir la fórmula para guardar solo la mitad triangular de una matriz de adyacencia en un arreglo unidimensional.',
+ molde:[
+  ['Producto: tres for anidados, O(n³)','La celda [i][j] es la suma de A[i][k] × B[k][j] para k de 0 a N−1. La suma es O(n²), el producto O(n³), por regla de anidamiento.'],
+  ['El triangular: contar celdas primero','El arreglo tiene N + (N−1) + … + 1 = N(N+1)/2 celdas.'],
+  ['La fórmula sale mirando la diagonal','M[i][i] cae en la celda i·N − i(i−1)/2. Después, M[i][j] cae en esa misma más (j − i). Si i &gt; j, se intercambian primero.']
+ ],
+ code:[
+ {t:'Producto de matrices y la fórmula del triangular',
+  c:`void Producto (Matriz A, Matriz B, Matriz &Prod)
+{
+    for (int i = 0; i < N; i++)
+        for (int j = 0; j < N; j++)
+        {
+            Prod[i][j] = 0;
+            for (int k = 0; k < N; k++)
+                Prod[i][j] = Prod[i][j] + A[i][k] * B[k][j];
+        }
+}
+/* O(n³): la instrucción del centro se ejecuta n³ veces */
+
+/* ---- Matriz de adyacencia guardada solo por su mitad ---- */
+const int N = ...;
+typedef int Grafo [N * (N+1) / 2];
+
+int DarPosicion (int i, int j)
+{
+    if (i > j)                     /* la matriz es simétrica */
+    {
+        int aux = j;  j = i;  i = aux;
+    }
+    return (i*N - i*(i-1)/2 + (j - i));
+}
+
+boolean SonAdyacentes (Grafo G, int u, int v)
+{
+    return (G[DarPosicion (u,v)] == 1);
+}`}
+ ],
+ trampas:[
+  'Olvidar inicializar <code>Prod[i][j] = 0</code> antes del ciclo de k.',
+  'En el triangular, no contemplar el caso i &gt; j.'
+ ]}
+
+];
+
+let tipoFilter='todos';
+function buildTipos(){
+  const list=(tipoFilter==='todos')?TIPOS:TIPOS.filter(t=>t.cat===tipoFilter);
+  const cont=document.getElementById('tipoList');
+  if(!cont) return;
+  cont.innerHTML=list.map((t,i)=>{
+    const rank=TIPOS.indexOf(t)+1;
+    const pct=Math.round(t.veces/t.total*100);
+    const yrs=t.examenes.map(e=>'<span class="yr">'+e+'</span>').join('');
+    const molde=t.molde.map(m=>'<h4>'+m[0]+'</h4><p>'+m[1]+'</p>').join('');
+    const tabla=t.tabla?('<div class="scrollx"><table>'+t.tabla.map((r,ri)=>
+        '<tr>'+r.map(c=>(ri===0?'<th>'+c+'</th>':'<td>'+c+'</td>')).join('')+'</tr>').join('')+'</table></div>'):'';
+    const code=t.code.map(c=>'<h4>'+c.t+'</h4><pre class="code"><code>'+hl(c.c)+'</code></pre>').join('');
+    const tr=t.trampas.map(x=>'<li>'+x+'</li>').join('');
+    return '<div class="tipo'+(rank<=2?' top':'')+'" id="'+t.id+'">'+
+      '<div class="th" onclick="toggleTipo(\''+t.id+'\')">'+
+        '<span class="rk">'+rank+'</span>'+
+        '<span><span class="tt">'+t.titulo+'</span><span class="tsub">'+t.sub+'</span></span>'+
+        '<span class="freq"><b>'+t.veces+'/'+t.total+'</b><span>'+t.pts+'</span></span>'+
+      '</div>'+
+      '<div class="tb">'+
+        '<div class="bar"><i style="width:'+pct+'%"></i></div>'+
+        '<div class="yrs">'+yrs+'</div>'+
+        '<h4>Qué te piden</h4><p>'+t.pide+'</p>'+
+        molde+tabla+code+
+        '<h4>Dónde se pierden puntos</h4><ul>'+tr+'</ul>'+
+      '</div></div>';
+  }).join('');
+}
+function toggleTipo(id){document.getElementById(id).classList.toggle('open');}
+
+/* ============ pizarrón de grafos ============ */
+const GG={nodes:[],edges:[],dir:false,wei:false};
+let gModo='v', gSel=-1, gDrag=-1, gHi={vis:[],cur:-1,edge:null,tree:[],cell:null},
+    gSteps=[], gIx=-1, gTimer=null, gAlgoActual='dfs';
+
+const GPRESETS={
+  vacio:{n:[],e:[]},
+  dos:{lab:'Dos componentes iguales (2019 Ago, ej. 1)',
+       n:[[220,120],[400,120],[580,120],[220,270],[400,270],[580,270]],
+       e:[[0,1],[0,3],[2,4],[4,5]]},
+  arbol:{lab:'Árbol de 6 vértices (2025 Nov, ej. 2)',
+       n:[[220,120],[400,120],[580,120],[220,270],[400,270],[580,270]],
+       e:[[0,1],[0,3],[1,4],[1,2],[2,5]]},
+  mult:{lab:'Múltiplos de 3 (2022 Nov · 2023 Feb · 2026 Feb)',
+       n:[[300,110],[180,110],[430,110],[180,230],[180,340],[560,230],[300,230],[430,340]],
+       e:[[1,2],[0,3],[0,6],[4,7]]},
+  puentes:{lab:'Grafo con puentes e istmos',
+       n:[[180,220],[330,130],[330,310],[480,220],[630,140],[630,300],[760,220]],
+       e:[[0,1],[0,2],[1,3],[2,3],[3,4],[4,5],[4,6],[5,6]]},
+  k5:{lab:'K₅ — grafo completo de 5 vértices',
+       n:[[450,90],[620,215],[555,375],[345,375],[280,215]],
+       e:[[0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]},
+  kru:{lab:'Grafo con costos, para Kruskal', w:true,
+       n:[[200,120],[400,90],[600,140],[250,300],[450,320],[650,290]],
+       e:[[0,1,4],[0,3,3],[1,2,5],[1,3,7],[1,4,2],[2,5,6],[3,4,8],[4,5,1]]}
+};
+
+const GCODE={
+ dfs:['void DFS (Grafo G, int actual, boolean visitado[N])','{',
+      '    visitado[actual] = TRUE;','    int j = 0;','    while (j < N)','    {',
+      '        if (G[actual][j] == 1)','            if (!visitado[j])',
+      '                DFS (G, j, visitado);','        j++;','    }','}'],
+ bfs:['void BFS (Grafo G, int inicio)','{','    Queue q;   Make (q);',
+      '    visitado[inicio] = TRUE;   InsBack (q, inicio);','    while (!Empty (q))','    {',
+      '        int actual = Front (q);   RemFront (q);','        for (int j = 0; j < N; j++)',
+      '            if (G[actual][j] == 1 && !visitado[j])','            {',
+      '                visitado[j] = TRUE;','                InsBack (q, j);','            }','    }','}'],
+ kru:['/* Kruskal */','ordenar todas las aristas por costo creciente',
+      'MFSet mf;   un conjunto por cada vértice','para cada arista {u,v} en ese orden:',
+      '    if (Find (mf, u) != Find (mf, v))','    {',
+      '        agregar {u,v} al árbol de cubrimiento','        Union (mf, u, v);','    }',
+      '    else','        descartarla: formaría un ciclo','hasta juntar n-1 aristas']
+};
+
+function gBoard(){return document.getElementById('gBoard');}
+function gAdj(u,v){
+  return GG.edges.some(e=>(e[0]===u&&e[1]===v)||(!GG.dir&&e[0]===v&&e[1]===u));
+}
+function gVecinos(u){
+  const r=[];
+  for(let v=0;v<GG.nodes.length;v++) if(v!==u&&gAdj(u,v)) r.push(v);
+  return r;
+}
+
+/* ---------- dibujo ---------- */
+function gDraw(){
+  const b=gBoard(); if(!b) return;
+  const R=19, out=[];
+  out.push('<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5a544c"/></marker>'+
+           '<marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0d6e64"/></marker></defs>');
+
+  GG.edges.forEach((e,i)=>{
+    const a=GG.nodes[e[0]], c=GG.nodes[e[1]];
+    if(!a||!c) return;
+    const dx=c.x-a.x, dy=c.y-a.y, L=Math.hypot(dx,dy)||1;
+    const x1=a.x+dx/L*R, y1=a.y+dy/L*R, x2=c.x-dx/L*R, y2=c.y-dy/L*R;
+    const enTree=gHi.tree.some(t=>(t[0]===e[0]&&t[1]===e[1])||(t[0]===e[1]&&t[1]===e[0]));
+    const esActual=gHi.edge&&((gHi.edge[0]===e[0]&&gHi.edge[1]===e[1])||(gHi.edge[0]===e[1]&&gHi.edge[1]===e[0]));
+    let col='#8f887e', w=2, dash='';
+    if(enTree){col='#0d6e64';w=3.4;}
+    if(esActual){col='#b4530a';w=3.4;dash=' stroke-dasharray="7 4"';}
+    out.push('<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+col+'" stroke-width="'+w+'"'+dash+
+             (GG.dir?' marker-end="url(#'+(enTree?'ah2':'ah')+')"':'')+'/>');
+    out.push('<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="transparent" stroke-width="16" data-e="'+i+'" style="cursor:pointer"/>');
+    if(GG.wei){
+      const mx=(a.x+c.x)/2, my=(a.y+c.y)/2;
+      out.push('<rect x="'+(mx-13)+'" y="'+(my-11)+'" width="26" height="20" rx="4" fill="#fbf9f5" stroke="'+col+'"/>');
+      out.push('<text x="'+mx+'" y="'+(my+4)+'" text-anchor="middle" font-size="12.5" font-weight="700" fill="'+col+'">'+(e[2]==null?1:e[2])+'</text>');
+    }
+  });
+
+  GG.nodes.forEach((n,i)=>{
+    let fill='#ffffff', stroke='#4a453e', tcol='#22201d', sw=2;
+    if(gHi.vis[i]){fill='#dff0ea';stroke='#0d6e64';tcol='#0d6e64';}
+    if(gHi.cur===i){fill='#b4530a';stroke='#8c3f07';tcol='#ffffff';sw=2.5;}
+    if(gSel===i){stroke='#b4530a';sw=3;}
+    out.push('<circle cx="'+n.x+'" cy="'+n.y+'" r="19" fill="'+fill+'" stroke="'+stroke+'" stroke-width="'+sw+'" data-n="'+i+'" style="cursor:pointer"/>');
+    out.push('<text x="'+n.x+'" y="'+(n.y+5)+'" text-anchor="middle" font-size="14" font-weight="700" fill="'+tcol+'" pointer-events="none">'+i+'</text>');
+  });
+
+  if(!GG.nodes.length)
+    out.push('<text x="450" y="200" text-anchor="middle" font-size="15" fill="#a89f92">Tocá el pizarrón para crear el vértice 0</text>');
+  b.innerHTML=out.join('');
+  gPanels();
+}
+
+/* ---------- panel matriz + listas ---------- */
+function gPanels(){
+  const n=GG.nodes.length, m=document.getElementById('gMat'), l=document.getElementById('gLst');
+  if(!m||!l) return;
+  if(!n){m.innerHTML='<p class="hint">Sin vértices todavía.</p>';l.innerHTML='<p class="hint">Sin vértices todavía.</p>';return;}
+  let t='<table class="adj"><tr><th></th>';
+  for(let j=0;j<n;j++) t+='<th>'+j+'</th>';
+  t+='</tr>';
+  for(let i=0;i<n;i++){
+    t+='<tr><th>'+i+'</th>';
+    for(let j=0;j<n;j++){
+      const one=gAdj(i,j)?1:0;
+      const hi=gHi.cell&&gHi.cell[0]===i&&gHi.cell[1]===j?' hi':'';
+      t+='<td class="'+(one?'one':'')+hi+'">'+one+'</td>';
+    }
+    t+='</tr>';
+  }
+  m.innerHTML=t+'</table>';
+
+  let s='<div class="adjlist">';
+  for(let i=0;i<n;i++){
+    const ve=gVecinos(i);
+    s+='<div><span class="v">'+i+'</span><span class="ar">→</span>';
+    s+=ve.length?ve.map(v=>'<span class="cell">'+v+'</span>').join('<span class="ar">→</span>')+'<span class="ar">→</span><span class="nil">NULL</span>'
+               :'<span class="nil">NULL</span>';
+    s+='</div>';
+  }
+  l.innerHTML=s+'</div>';
+
+  const sel=document.getElementById('gStart');
+  if(sel){
+    const prev=sel.value;
+    sel.innerHTML=GG.nodes.map((x,i)=>'<option value="'+i+'">'+i+'</option>').join('');
+    if(prev&&prev<n) sel.value=prev;
+  }
+  const st=document.getElementById('gStats');
+  if(st) st.textContent='|V| = '+n+'   ·   ||G|| = '+GG.edges.length;
+}
+
+/* ---------- interacción ---------- */
+function gPt(ev){
+  const b=gBoard(), p=b.createSVGPoint();
+  p.x=ev.clientX; p.y=ev.clientY;
+  return p.matrixTransform(b.getScreenCTM().inverse());
+}
+function gModo_(m){
+  gModo=m; gSel=-1;
+  ['v','a','m','b'].forEach(k=>{
+    const el=document.getElementById('gm'+k);
+    if(el) el.classList.toggle('on',k===m);
+  });
+  gBoard().classList.toggle('mov',m==='m');
+  const h={v:'Tocá el pizarrón para agregar vértices. Se numeran solos, de 0 en adelante.',
+           a:'Tocá un vértice y después otro para unirlos con una arista.',
+           m:'Arrastrá los vértices para acomodar el dibujo.',
+           b:'Tocá un vértice para borrarlo (con sus aristas) o una arista para borrarla sola.'}[m];
+  gLog(h);
+  gDraw();
+}
+function gLog(t,bad){
+  const el=document.getElementById('gHint');
+  if(el){el.innerHTML=t;el.className='log'+(bad?' bad':'');}
+}
+function gBorrarNodo(k){
+  GG.edges=GG.edges.filter(e=>e[0]!==k&&e[1]!==k).map(e=>[e[0]>k?e[0]-1:e[0], e[1]>k?e[1]-1:e[1], e[2]]);
+  GG.nodes.splice(k,1);
+  gResetRun();
+}
+function gInitBoard(){
+  const b=gBoard(); if(!b||b.dataset.ready) return;
+  b.dataset.ready='1';
+  b.addEventListener('pointerdown',ev=>{
+    const nEl=ev.target.closest('[data-n]'), eEl=ev.target.closest('[data-e]');
+    const p=gPt(ev);
+    if(gModo==='m'){
+      if(nEl){gDrag=+nEl.dataset.n; b.setPointerCapture(ev.pointerId);}
+      return;
+    }
+    if(gModo==='v'){
+      if(nEl) return;
+      GG.nodes.push({x:Math.round(p.x),y:Math.round(p.y)});
+      gResetRun();
+      gLog('Agregué el vértice <b>'+(GG.nodes.length-1)+'</b>. Ahora |V| = '+GG.nodes.length+'.');
+      gDraw(); return;
+    }
+    if(gModo==='a'){
+      if(!nEl) return;
+      const k=+nEl.dataset.n;
+      if(gSel<0){gSel=k;gLog('Vértice <b>'+k+'</b> seleccionado. Tocá el otro extremo.');gDraw();return;}
+      if(gSel===k){gSel=-1;gLog('Selección cancelada.');gDraw();return;}
+      if(gAdj(gSel,k)&&!GG.dir){gLog('Esa arista ya existe: en un grafo simple no se repite.',1);gSel=-1;gDraw();return;}
+      const c=+(document.getElementById('gCost')||{value:1}).value||1;
+      GG.edges.push([gSel,k,c]);
+      gLog('Arista <b>{'+gSel+', '+k+'}</b> agregada. Ahora ||G|| = '+GG.edges.length+'.');
+      gSel=-1; gResetRun(); gDraw(); return;
+    }
+    if(gModo==='b'){
+      if(nEl){const k=+nEl.dataset.n; gBorrarNodo(k); gLog('Borré el vértice '+k+'. Los demás se renumeraron.'); gDraw(); return;}
+      if(eEl){const i=+eEl.dataset.e; const e=GG.edges[i]; GG.edges.splice(i,1); gLog('Borré la arista {'+e[0]+', '+e[1]+'}.'); gResetRun(); gDraw(); return;}
+    }
+  });
+  b.addEventListener('pointermove',ev=>{
+    if(gDrag<0) return;
+    const p=gPt(ev);
+    GG.nodes[gDrag].x=Math.max(24,Math.min(876,p.x));
+    GG.nodes[gDrag].y=Math.max(24,Math.min(376,p.y));
+    gDraw();
+  });
+  b.addEventListener('pointerup',()=>{gDrag=-1;});
+  b.addEventListener('pointercancel',()=>{gDrag=-1;});
+
+  const sel=document.getElementById('gPreset');
+  if(sel) sel.innerHTML='<option value="">Cargar un ejemplo…</option>'+
+    Object.keys(GPRESETS).filter(k=>GPRESETS[k].lab).map(k=>'<option value="'+k+'">'+GPRESETS[k].lab+'</option>').join('');
+  gModo_('v');
+}
+function gLoadPreset(k){
+  if(!k) return;
+  const p=GPRESETS[k];
+  GG.nodes=p.n.map(a=>({x:a[0],y:a[1]}));
+  GG.edges=p.e.map(a=>[a[0],a[1],a[2]==null?1:a[2]]);
+  GG.wei=!!p.w;
+  const w=document.getElementById('gW'); if(w) w.checked=GG.wei;
+  const c=document.getElementById('gCost'); if(c) c.style.display=GG.wei?'':'none';
+  if(p.w){const s=document.getElementById('gAlgo'); if(s) s.value='kru';}
+  gResetRun(); gDraw();
+  gLog('Cargué el ejemplo: <b>'+p.lab+'</b>. Podés moverlo, editarlo y correrle un algoritmo.');
+}
+function gClear(){GG.nodes=[];GG.edges=[];gSel=-1;gResetRun();gDraw();gLog('Pizarrón limpio.');}
+function gToggleDir(){GG.dir=document.getElementById('gDir').checked;gResetRun();gDraw();
+  gLog(GG.dir?'Modo <b>dirigido</b>: la arista va del primer vértice que tocás al segundo, y la matriz deja de ser simétrica.':'Modo <b>no dirigido</b>: la matriz vuelve a ser simétrica.');}
+function gToggleW(){GG.wei=document.getElementById('gW').checked;
+  document.getElementById('gCost').style.display=GG.wei?'':'none';gDraw();}
+
+/* ---------- algoritmos paso a paso ---------- */
+function gPush(steps,o){steps.push(o);}
+function gStepsDFS(start){
+  const n=GG.nodes.length, vis=new Array(n).fill(false), pila=[], tree=[], steps=[];
+  const snap=(msg,line,cur,edge,cell)=>steps.push({msg,line,cur,edge:edge||null,cell:cell||null,
+    vis:vis.slice(),estr:pila.slice(),tree:tree.map(t=>t.slice())});
+  snap('Inicializo <code>visitado[i] = FALSE</code> para los '+n+' vértices. Todavía no visité nada.',2,-1);
+  function dfs(u){
+    vis[u]=true; pila.push(u);
+    snap('<b>DFS('+u+')</b> — marco <code>visitado['+u+'] = TRUE</code> y busco adyacentes.',2,u);
+    for(let v=0;v<n;v++){
+      if(v===u||!gAdj(u,v)) continue;
+      if(!vis[v]){
+        tree.push([u,v]);
+        snap('<code>G['+u+']['+v+'] = 1</code> y '+v+' no está visitado: llamo <b>DFS('+v+')</b>.',8,u,[u,v],[u,v]);
+        dfs(v);
+        snap('Volví de DFS('+v+'). Sigo recorriendo los adyacentes de '+u+'.',9,u,null,null);
+      }else{
+        snap('<code>G['+u+']['+v+'] = 1</code> pero '+v+' ya está visitado: no vuelvo a entrar.',7,u,[u,v],[u,v]);
+      }
+    }
+    pila.pop();
+    snap('DFS('+u+') terminó: '+u+' no tiene más adyacentes sin visitar. Vuelvo.',11,u);
+  }
+  dfs(start);
+  for(let i=0;i<n;i++){
+    if(!vis[i]){
+      snap('El vértice '+i+' quedó sin visitar: es otra <b>componente conexa</b>. El envoltorio lanza un DFS nuevo desde acá.',0,-1);
+      dfs(i);
+    }
+  }
+  const comp=steps.filter(s=>s.line===0).length;
+  snap('Listo. Se recorrió todo el grafo con <b>'+(comp+1)+'</b> componente'+(comp?'s':'')+' conexa'+(comp?'s':'')+' y '+tree.length+' aristas de árbol.',11,-1);
+  return steps;
+}
+function gStepsBFS(start){
+  const n=GG.nodes.length, vis=new Array(n).fill(false), cola=[], tree=[], steps=[];
+  const snap=(msg,line,cur,edge,cell)=>steps.push({msg,line,cur,edge:edge||null,cell:cell||null,
+    vis:vis.slice(),estr:cola.slice(),tree:tree.map(t=>t.slice())});
+  snap('Cola vacía y <code>visitado[]</code> todo en FALSE.',2,-1);
+  vis[start]=true; cola.push(start);
+  snap('Marco el inicio '+start+' y lo encolo. La cola es lo único que distingue BFS de DFS.',3,start);
+  while(cola.length){
+    const u=cola.shift();
+    snap('Saco <b>'+u+'</b> del frente de la cola y lo proceso.',6,u);
+    for(let v=0;v<n;v++){
+      if(v===u||!gAdj(u,v)) continue;
+      if(!vis[v]){
+        vis[v]=true; cola.push(v); tree.push([u,v]);
+        snap('El vecino '+v+' no estaba visitado: lo marco y lo encolo por el final.',11,u,[u,v],[u,v]);
+      }else{
+        snap('El vecino '+v+' ya estaba visitado: lo salteo.',8,u,[u,v],[u,v]);
+      }
+    }
+  }
+  snap('La cola quedó vacía: recorrí toda la componente conexa de '+start+' por niveles.',14,-1);
+  return steps;
+}
+function gStepsKruskal(){
+  const n=GG.nodes.length, steps=[], tree=[];
+  const padre=Array.from({length:n},(_,i)=>i);
+  const find=x=>{while(padre[x]!==x)x=padre[x];return x;};
+  const ord=GG.edges.map((e,i)=>({u:e[0],v:e[1],w:e[2]==null?1:e[2],i})).sort((a,b)=>a.w-b.w);
+  const estado=ord.map(()=>'');
+  const snap=(msg,line,edge,k)=>steps.push({msg,line,cur:-1,edge:edge||null,cell:null,
+    vis:new Array(n).fill(false),estr:[],tree:tree.map(t=>t.slice()),
+    kr:{ord:ord.map((e,j)=>({...e,st:estado[j]})),now:k==null?-1:k,
+        comp:Array.from({length:n},(_,i)=>find(i))}});
+  snap('Ordeno las '+ord.length+' aristas por costo creciente y arranco con cada vértice en su propio conjunto del MFSet.',1);
+  for(let k=0;k<ord.length;k++){
+    const e=ord[k];
+    snap('Miro la arista <b>{'+e.u+', '+e.v+'}</b> de costo '+e.w+'. ¿Están '+e.u+' y '+e.v+' en el mismo conjunto?',4,[e.u,e.v],k);
+    if(find(e.u)!==find(e.v)){
+      padre[find(e.u)]=find(e.v);
+      tree.push([e.u,e.v]); estado[k]='ok';
+      snap('No: <code>Find('+e.u+') != Find('+e.v+')</code>. La <b>acepto</b> y hago Union. Van '+tree.length+' de '+(n-1)+'.',7,[e.u,e.v],k);
+    }else{
+      estado[k]='no';
+      snap('Sí, ya estaban conectados: agregarla <b>formaría un ciclo</b>. La descarto.',10,[e.u,e.v],k);
+    }
+    if(tree.length===n-1){
+      snap('Ya tengo n−1 = '+(n-1)+' aristas: el árbol de cubrimiento de costo mínimo está completo. Costo total: <b>'+
+           tree.reduce((s,t)=>{const f=GG.edges.find(x=>(x[0]===t[0]&&x[1]===t[1])||(x[0]===t[1]&&x[1]===t[0]));return s+(f&&f[2]!=null?f[2]:1);},0)+'</b>.',11);
+      break;
+    }
+  }
+  return steps;
+}
+
+function gRun(){
+  if(GG.nodes.length<1){gMsg('Dibujá algún vértice primero.',1);return;}
+  gAlgoActual=document.getElementById('gAlgo').value;
+  const st=+(document.getElementById('gStart')||{value:0}).value||0;
+  if(gAlgoActual==='kru'&&!GG.wei){
+    document.getElementById('gW').checked=true; GG.wei=true;
+    document.getElementById('gCost').style.display='';
+  }
+  gSteps = gAlgoActual==='dfs'?gStepsDFS(st) : gAlgoActual==='bfs'?gStepsBFS(st) : gStepsKruskal();
+  gIx=0; gPaint();
+}
+function gResetRun(){
+  gSteps=[];gIx=-1;gHi={vis:[],cur:-1,edge:null,tree:[],cell:null};
+  if(gTimer){clearInterval(gTimer);gTimer=null;const b=document.getElementById('gAutoBtn');if(b)b.textContent='Auto';}
+  const s=document.getElementById('gState'); if(s) s.innerHTML='';
+  const c=document.getElementById('gCodeBox'); if(c) c.innerHTML='';
+}
+function gReset(){gResetRun();gDraw();gMsg('Listo para volver a empezar.');}
+function gStep(d){
+  if(!gSteps.length){gRun();return;}
+  gIx=Math.max(0,Math.min(gSteps.length-1,gIx+d));
+  gPaint();
+}
+function gAuto(){
+  const b=document.getElementById('gAutoBtn');
+  if(gTimer){clearInterval(gTimer);gTimer=null;b.textContent='Auto';return;}
+  if(!gSteps.length) gRun();
+  b.textContent='Pausa';
+  gTimer=setInterval(()=>{
+    if(gIx>=gSteps.length-1){clearInterval(gTimer);gTimer=null;b.textContent='Auto';return;}
+    gIx++; gPaint();
+  },900);
+}
+function gMsg(t,bad){
+  const el=document.getElementById('gMsg');
+  if(el){el.innerHTML=t;el.className='log'+(bad?' bad':'');}
+}
+function gPaint(){
+  const s=gSteps[gIx]; if(!s) return;
+  gHi={vis:s.vis,cur:s.cur,edge:s.edge,tree:s.tree,cell:s.cell};
+  gDraw();
+  gMsg('<span class="stepno">Paso '+(gIx+1)+' de '+gSteps.length+'</span>'+s.msg);
+
+  let h='';
+  if(gAlgoActual!=='kru'){
+    h+='<div class="opnote" style="margin:0 0 6px"><b>visitado[]</b></div><div class="arr">'+
+       s.vis.map((v,i)=>'<div class="c'+(v?' t':'')+(s.cur===i?' cur':'')+'"><span class="i">'+i+'</span>'+(v?'T':'F')+'</div>').join('')+'</div>';
+    h+='<div class="opnote" style="margin:12px 0 6px"><b>'+(gAlgoActual==='dfs'?'Pila de llamadas recursivas':'Cola')+'</b>'+
+       (s.estr.length?'':' <span style="color:#9a938a">— vacía</span>')+'</div><div class="arr">'+
+       s.estr.map((v,i)=>'<div class="c'+(i===s.estr.length-1&&gAlgoActual==='dfs'?' cur':'')+'">'+v+'</div>').join('')+'</div>';
+  }else if(s.kr){
+    h+='<div class="opnote" style="margin:0 0 6px"><b>Aristas ordenadas por costo</b></div><div class="klist">'+
+       s.kr.ord.map((e,j)=>'<span class="e'+(e.st?' '+e.st:'')+(j===s.kr.now?' now':'')+'">{'+e.u+','+e.v+'} · '+e.w+'</span>').join('')+'</div>';
+    const gr={};
+    s.kr.comp.forEach((c,i)=>{(gr[c]=gr[c]||[]).push(i);});
+    h+='<div class="opnote" style="margin:12px 0 6px"><b>MFSet — conjuntos actuales</b></div><div class="klist">'+
+       Object.values(gr).map(g=>'<span class="e">{'+g.join(', ')+'}</span>').join('')+'</div>';
+  }
+  const box=document.getElementById('gState'); if(box) box.innerHTML=h;
+
+  const cb=document.getElementById('gCodeBox');
+  if(cb) cb.innerHTML='<pre class="code"><code>'+GCODE[gAlgoActual].map((ln,i)=>
+      '<span class="ln'+(i===s.line?' hi':'')+'">'+(hl(ln)||'&nbsp;')+'</span>').join('')+'</code></pre>';
+}
+
+/* ============ laboratorio de estructuras ============ */
+const EST={
+ simple:{nom:'Lista simple',fam:'lista',doble:0,circ:0,ppf:0,
+   desc:'Un único puntero al primer nodo. Es la base de todas las demás: cada nodo guarda su valor y un <code>sig</code>. El último apunta a NULL.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                     } Nodo;
+typedef Nodo * Lista;`},
+ lppf:{nom:'LPPF',fam:'lista',doble:0,circ:0,ppf:1,
+   desc:'Lista con <b>p</b>untero al <b>p</b>rincipio y al <b>f</b>inal. La estructura ya no es un puntero sino un struct con <code>prim</code> y <code>ulti</code>. Es la que más aparece en los exámenes: sirve como Queue y como Secuencia.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                     } Nodo;
+typedef struct { Nodo * prim;
+                 Nodo * ulti;
+               } LPPF;`},
+ lde:{nom:'LDE',fam:'lista',doble:1,circ:0,ppf:0,
+   desc:'<b>D</b>oblemente <b>e</b>ncadenada: cada nodo agrega un puntero <code>ant</code> al anterior. Permite recorrerla para atrás, pero sin puntero al final hay que llegar caminando.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                       nodoL * ant;
+                     } Nodo;
+typedef Nodo * LDE;`},
+ ldeppf:{nom:'LDEPPF',fam:'lista',doble:1,circ:0,ppf:1,
+   desc:'La más cómoda de todas: doblemente encadenada y con punteros a los dos extremos. Es la única en la que <i>borrar el último</i> es O(1), y por eso es la estructura elegida para representar un Deque.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                       nodoL * ant;
+                     } Nodo;
+typedef struct { Nodo * prim;
+                 Nodo * ulti;
+               } LDEPPF;`},
+ lc:{nom:'LC',fam:'lista',doble:0,circ:1,ppf:0,
+   desc:'<b>C</b>ircular: el <code>sig</code> del último apunta al primero, así que no hay NULL en ningún lado. Ojo con los recorridos: hay que usar <code>do-while</code> o el ciclo no arranca nunca.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                     } Nodo;
+typedef Nodo * LC;`},
+ ldec:{nom:'LDEC',fam:'lista',doble:1,circ:1,ppf:0,
+   desc:'Doblemente encadenada <i>y</i> circular. Con un solo puntero al primero llegás al último en un paso: <code>L -&gt; ant</code>. Cayó en 2019 Feb y 2023 Ago.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                       nodoL * ant;
+                     } nodo;
+typedef nodo * LDEC;`},
+ lcppf:{nom:'LCPPF',fam:'lista',doble:0,circ:1,ppf:1,
+   desc:'Circular con punteros al principio y al final. Es la variante inventada del examen de 2026 Feb: el enunciado la define ahí mismo y hay que deducir cómo se comporta.',
+   tipos:`typedef struct nodoL { int info;
+                       nodoL * sig;
+                     } Nodo;
+typedef struct { Nodo * prim;
+                 Nodo * ulti;
+               } LCPPF;`},
+ arreglo:{nom:'Arreglo con tope',fam:'arreglo',
+   desc:'Un arreglo de tamaño fijo más un entero <code>tope</code> que dice cuántas celdas están realmente usadas. Todo lo que esté de <code>tope</code> en adelante es basura.',
+   tipos:`const int MAX = 10;
+typedef struct { int arre [MAX];
+                 int tope;
+               } ArregloConTope;`},
+ mapeo:{nom:'Mapeo',fam:'mapeo',
+   desc:'Un arreglo donde el <b>índice es la clave</b>. Cada celda lleva un <code>existe</code> que dice si esa clave está cargada. Se elige cuando las claves son un rango acotado de naturales.',
+   tipos:`typedef struct { boolean existe;
+                 int info;
+               } Celda;
+const int TAM = 10;
+typedef Celda Mapeo [TAM];`},
+ hash:{nom:'Hash',fam:'hash',
+   desc:'B cubetas, cada una con una lista de los elementos cuya clave dispersa ahí. Con <code>h(x) = x % B</code> y pocas colisiones, buscar es O(1) en el caso <i>promedio</i> — nunca en el peor.',
+   tipos:`typedef struct nodoH { int info;
+                       nodoH * sig;
+                     } NodoH;
+typedef NodoH * Lista;
+const int B = 7;
+typedef Lista Hash [B];`},
+ abb:{nom:'ABB',fam:'arbol',
+   desc:'Árbol binario de búsqueda: todo lo menor va a la izquierda, todo lo mayor a la derecha. Buscar es O(log n) <i>si</i> está equilibrado — probá insertar 1, 2, 3, 4, 5 en orden y mirá lo que pasa.',
+   tipos:`typedef struct nodoA { int info;
+                       nodoA * hizq;
+                       nodoA * hder;
+                     } nodoABB;
+typedef nodoABB * ABB;`},
+ avl:{nom:'AVL',fam:'arbol',
+   desc:'Un ABB que se rebalancea solo. Cada nodo guarda su <code>altura</code> y, cuando la diferencia entre subárboles pasa de 1, rota. Por eso la búsqueda es O(log n) garantizado.',
+   tipos:`typedef struct nodoAVL { int info;
+                         nodoAVL * hizq;
+                         nodoAVL * hder;
+                         int altura;
+                       } NodoA;
+typedef NodoA * AVL;`},
+ nario:{nom:'Árbol N-ario',fam:'nario',
+   desc:'Cada nodo tiene un arreglo de hasta N hijos y un <code>topeHijos</code> que dice cuántos usa. Tocá un nodo para seleccionarlo y agregarle un hijo.',
+   tipos:`const int N = 4;
+typedef struct nodoA { int info;
+                       nodoA * hijos [N];
+                       int topeHijos;
+                     } Nodo;
+typedef Nodo * Arbol_N_ario;`},
+ mfset:{nom:'MFSet',fam:'mfset',
+   desc:'Conjuntos disjuntos. Cada elemento apunta a un representante; <code>Find</code> sube hasta la raíz y <code>Union</code> cuelga una raíz de la otra. Es lo que usa Kruskal para saber si una arista cierra un ciclo.',
+   tipos:`const int N = 8;
+typedef int MFSet [N];   /* MFSet[i] = padre de i */`}
+};
+
+const ECODE={
+ 'lppf.insback':`void Insback (LPPF &L, int e)
+{
+    Nodo * nuevo = new Nodo;
+    nuevo -> info = e;
+    nuevo -> sig  = NULL;
+    if (L.prim == NULL)          /* lista vacía */
+    {
+        L.prim = nuevo;
+        L.ulti = nuevo;
+    }
+    else
+    {
+        L.ulti -> sig = nuevo;
+        L.ulti = nuevo;
+    }
+}`,
+ 'lppf.remfront':`void Remfront (LPPF &q)
+{
+    Nodo * aux = q.prim -> sig;
+    delete (q.prim);
+    q.prim = aux;
+    if (aux == NULL)             /* quedó vacía */
+        q.ulti = NULL;
+}`,
+ 'lppf.remback':`/* No hay forma de hacerlo en O(1): tengo ulti, pero necesito
+   el ANTERIOR al último para dejarlo apuntando a NULL. */
+void Remback (LPPF &L)
+{
+    if (L.prim == L.ulti)  { delete L.prim; L.prim = NULL; L.ulti = NULL; }
+    else
+    {
+        Nodo * aux = L.prim;
+        while (aux -> sig != L.ulti)      /* recorrida completa */
+            aux = aux -> sig;
+        delete (L.ulti);
+        aux -> sig = NULL;
+        L.ulti = aux;
+    }
+}`,
+ 'ldeppf.insback':`void Insback (LDEPPF &d, int e)
+{
+    Nodo * aux = new Nodo;
+    aux -> info = e;
+    aux -> ant  = d.ulti;
+    aux -> sig  = NULL;
+    if (d.ulti == NULL)
+        d.prim = aux;
+    else
+        d.ulti -> sig = aux;
+    d.ulti = aux;
+}`,
+ 'ldeppf.remback':`void Remback (LDEPPF &d)
+{
+    Nodo * aux = d.ulti;
+    d.ulti = d.ulti -> ant;      /* acá está la ventaja del ant */
+    delete (aux);
+    if (d.ulti == NULL)
+        d.prim = NULL;
+    else
+        d.ulti -> sig = NULL;
+}`,
+ 'ldeppf.insfront':`void Insfront (LDEPPF &d, int e)
+{
+    Nodo * aux = new Nodo;
+    aux -> info = e;
+    aux -> sig  = d.prim;
+    aux -> ant  = NULL;
+    if (d.prim == NULL)
+        d.ulti = aux;
+    else
+        d.prim -> ant = aux;
+    d.prim = aux;
+}`,
+ 'ldec.insback':`void Insback (LDEC &L, int valor)
+{
+    LDEC nuevo = new nodo;
+    nuevo -> info = valor;
+    if (L == NULL)
+    {
+        L = nuevo;
+        nuevo -> sig = L;
+        nuevo -> ant = L;
+    }
+    else
+    {
+        LDEC aux = L -> ant;     /* el último, en un solo paso */
+        aux -> sig = nuevo;
+        nuevo -> ant = aux;
+        nuevo -> sig = L;
+        L -> ant = nuevo;
+    }
+}`,
+ 'ldec.insfront':`void Insfront (LDEC &L, int valor)
+{
+    /* idéntica a Insback, pero moviendo la cabeza al final */
+    LDEC nuevo = new nodo;
+    nuevo -> info = valor;
+    if (L == NULL)
+    { L = nuevo;  nuevo -> sig = L;  nuevo -> ant = L; }
+    else
+    {
+        LDEC aux = L -> ant;
+        aux -> sig = nuevo;
+        nuevo -> ant = aux;
+        nuevo -> sig = L;
+        L -> ant = nuevo;
+        L = nuevo;               /* la única diferencia */
+    }
+}`,
+ 'ldec.buscar':`int Sumar (LDEC L)
+{
+    int sum = 0;
+    if (L != NULL)
+    {
+        LDEC aux = L;
+        while (aux -> sig != L)      /* hasta el penúltimo */
+        {
+            sum = sum + aux -> info;
+            aux = aux -> sig;
+        }
+        sum = sum + aux -> info;     /* el último, aparte */
+    }
+    return sum;
+}`,
+ 'lcppf.insback':`void Insback (LCPPF &L, int valor)
+{
+    Nodo * nuevo = new Nodo;
+    nuevo -> info = valor;
+    if (L.ulti == NULL)
+    {
+        L.ulti = nuevo;
+        L.prim = nuevo;
+    }
+    else
+    {
+        L.ulti -> sig = nuevo;
+        L.ulti = nuevo;
+    }
+    nuevo -> sig = L.prim;       /* cierra el círculo */
+}`,
+ 'lcppf.buscar':`boolean Pertenece (LCPPF L, int valor)
+{
+    boolean esta = FALSE;
+    if (L.prim != NULL)
+    {
+        Nodo * aux = L.prim;
+        do
+        {
+            if (aux -> info == valor)
+                esta = TRUE;
+            else
+                aux = aux -> sig;
+        }
+        while (aux != L.prim && !esta);   /* do-while, siempre */
+    }
+    return esta;
+}`,
+ 'lc.buscar':`boolean Pertenece (LC L, int valor)
+{
+    boolean esta = FALSE;
+    if (L != NULL)
+    {
+        LC aux = L;
+        do
+        {
+            if (aux -> info == valor)  esta = TRUE;
+            else                       aux = aux -> sig;
+        }
+        while (aux != L && !esta);
+    }
+    return esta;
+}`,
+ 'simple.insfront':`void Insfront (Lista &L, int e)
+{
+    Lista nuevo = new Nodo;
+    nuevo -> info = e;
+    nuevo -> sig  = L;
+    L = nuevo;
+}`,
+ 'simple.insback':`void Insback (Lista &L, int e)
+{
+    Lista nuevo = new Nodo;
+    nuevo -> info = e;
+    nuevo -> sig  = NULL;
+    if (L == NULL)
+        L = nuevo;
+    else
+    {
+        Lista aux = L;
+        while (aux -> sig != NULL)   /* recorrida completa: O(n) */
+            aux = aux -> sig;
+        aux -> sig = nuevo;
+    }
+}`,
+ 'lde.buscar':`void ListarInverso (LDE L)
+{
+    while (L -> sig != NULL)     /* n pasos para llegar al final */
+        L = L -> sig;
+    while (L != NULL)            /* y n para volver, gracias al ant */
+    {
+        printf (" %d ", L -> info);
+        L = L -> ant;
+    }
+}`
+};
+
+let estAct='lppf';
+const ED={lista:[],arre:{a:[],tope:0,MAX:10},mapeo:[],hash:[],abb:null,avl:null,nario:null,mfset:[],
+          sel:-1,hi:-1,hi2:-1,narioSel:0};
+
+function estInit(){
+  ED.mapeo=Array.from({length:10},()=>({e:false,v:0}));
+  ED.hash=Array.from({length:7},()=>[]);
+  ED.mfset=Array.from({length:8},(_,i)=>i);
+  const chips=document.getElementById('estChips');
+  if(chips&&!chips.dataset.ready){
+    chips.dataset.ready='1';
+    chips.innerHTML=Object.keys(EST).map(k=>'<span class="chip'+(k===estAct?' on':'')+'" data-e="'+k+'">'+EST[k].nom+'</span>').join('');
+    chips.addEventListener('click',ev=>{
+      const c=ev.target.closest('[data-e]'); if(!c) return;
+      chips.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));
+      c.classList.add('on'); estSwitch(c.dataset.e);
+    });
+  }
+  estSwitch(estAct);
+}
+function estSwitch(k){
+  estAct=k; ED.hi=-1; ED.hi2=-1;
+  const e=EST[k];
+  if(e.fam==='lista') ED.lista=[7,3,9];
+  if(e.fam==='arreglo') ED.arre={a:[4,8,15],tope:3,MAX:10};
+  if(e.fam==='mapeo') ED.mapeo=Array.from({length:10},(_,i)=>({e:[0,2,4,5].includes(i),v:[5,0,7,0,2,4][i]||i*3}));
+  if(e.fam==='hash'){ED.hash=Array.from({length:7},()=>[]);[12,7,25,19,3].forEach(x=>ED.hash[x%7].push(x));}
+  if(k==='abb'){ED.abb=null;[50,30,70,20,40,60].forEach(v=>{ED.abb=abbIns(ED.abb,v);});}
+  if(k==='avl'){ED.avl=null;[10,20,30].forEach(v=>{ED.avl=avlIns(ED.avl,v).n;});}
+  if(e.fam==='nario'){ED.nario={v:4,h:[{v:3,h:[]},{v:5,h:[{v:1,h:[]},{v:7,h:[]}]},{v:10,h:[]}]};ED.narioSel=null;}
+  if(e.fam==='mfset') ED.mfset=Array.from({length:8},(_,i)=>i);
+  document.getElementById('estHead').innerHTML='<h3 style="margin:0 0 6px">'+e.nom+'</h3><p style="margin:0 0 4px">'+e.desc+'</p>';
+  document.getElementById('estTipos').innerHTML='<pre class="code"><code>'+hl(e.tipos)+'</code></pre>';
+  document.getElementById('estCode').innerHTML='<p class="hint">Ejecutá una operación y acá aparece su código en C++ con su orden.</p>';
+  estOps(); estDraw(); estLog('Estructura cargada con valores de ejemplo. Probá las operaciones de arriba.');
+}
+function estLog(t,bad){
+  const el=document.getElementById('estLog');
+  if(el){el.innerHTML=t;el.className='log'+(bad?' bad':'');}
+}
+function estShowCode(key,orden,porque){
+  const c=ECODE[key];
+  const b='<span class="obadge '+(orden==='O(1)'?'o1':'on')+'">'+orden+'</span>';
+  document.getElementById('estCode').innerHTML=
+    (c?'<pre class="code"><code>'+hl(c)+'</code></pre>':'')+
+    '<div class="opnote">'+b+'<span>'+porque+'</span></div>';
+}
+function estVal(){
+  const i=document.getElementById('estVal');
+  const v=i?parseInt(i.value,10):NaN;
+  return isNaN(v)?Math.floor(Math.random()*90)+1:v;
+}
+function estVal2(){
+  const i=document.getElementById('estVal2');
+  const v=i?parseInt(i.value,10):NaN;
+  return isNaN(v)?0:v;
+}
+
+/* ---------- barra de operaciones ---------- */
+function estOps(){
+  const e=EST[estAct], bar=document.getElementById('estOps');
+  const val='<span class="lbl">Valor</span><input type="number" id="estVal" value="'+(Math.floor(Math.random()*90)+10)+'">';
+  let h='';
+  if(e.fam==='lista'){
+    h=val+
+      '<button onclick="lOp(\'insfront\')">Insfront</button>'+
+      '<button onclick="lOp(\'insback\')">Insback</button>'+
+      '<button onclick="lOp(\'remfront\')">Remfront</button>'+
+      '<button onclick="lOp(\'remback\')">Remback</button>'+
+      '<button onclick="lOp(\'buscar\')">Buscar / recorrer</button>'+
+      '<span class="sep"></span><button onclick="lOp(\'vaciar\')">Vaciar</button>';
+  }else if(e.fam==='arreglo'){
+    h=val+'<button onclick="aOp(\'ins\')">Insertar</button>'+
+      '<button onclick="aOp(\'del\')">BorrarUltimo</button>'+
+      '<span class="lbl">k</span><input type="number" id="estVal2" value="2">'+
+      '<button onclick="aOp(\'kesimo\')">K-ésimo</button>'+
+      '<button onclick="aOp(\'largo\')">Largo</button>';
+  }else if(e.fam==='mapeo'){
+    h='<span class="lbl">Clave</span><input type="number" id="estVal2" value="3" min="0" max="9">'+val+
+      '<button onclick="mOp(\'assign\')">Assign</button>'+
+      '<button onclick="mOp(\'delete\')">Delete</button>'+
+      '<button onclick="mOp(\'member\')">Member</button>'+
+      '<span class="sep"></span><button onclick="mOp(\'total\')">¿EsTotal?</button>'+
+      '<button onclick="mOp(\'vacio\')">¿EstáVacío?</button>';
+  }else if(e.fam==='hash'){
+    h='<span class="lbl">Clave</span><input type="number" id="estVal" value="'+(Math.floor(Math.random()*40)+1)+'">'+
+      '<button onclick="hOp(\'ins\')">Insert</button>'+
+      '<button onclick="hOp(\'member\')">Member</button>'+
+      '<button onclick="hOp(\'del\')">Delete</button>'+
+      '<span class="sep"></span><button onclick="hOp(\'colision\')">Provocar colisión</button>'+
+      '<button onclick="hOp(\'vaciar\')">Vaciar</button>';
+  }else if(e.fam==='arbol'){
+    h=val+'<button onclick="tOp(\'ins\')">Insertar</button>'+
+      '<button onclick="tOp(\'buscar\')">Buscar</button>'+
+      '<span class="sep"></span><button onclick="tOp(\'in\')">Inorden</button>'+
+      '<button onclick="tOp(\'pre\')">Preorden</button>'+
+      '<button onclick="tOp(\'post\')">Postorden</button>'+
+      '<span class="sep"></span><button onclick="tOp(\'vaciar\')">Vaciar</button>'+
+      (estAct==='abb'?'<button onclick="tOp(\'degenerar\')">Insertar 1..6 en orden</button>':'');
+  }else if(e.fam==='nario'){
+    h=val+'<button onclick="nOp(\'hijo\')">Agregar hijo al seleccionado</button>'+
+      '<button onclick="nOp(\'borrar\')">Borrar el seleccionado</button>'+
+      '<span class="sep"></span><button onclick="nOp(\'recorrer\')">Recorrer</button>'+
+      '<button onclick="nOp(\'pertenece\')">¿Pertenece el valor?</button>';
+  }else if(e.fam==='mfset'){
+    h='<span class="lbl">a</span><input type="number" id="estVal" value="0" min="0" max="7">'+
+      '<span class="lbl">b</span><input type="number" id="estVal2" value="1" min="0" max="7">'+
+      '<button onclick="fOp(\'union\')">Union(a, b)</button>'+
+      '<button onclick="fOp(\'find\')">Find(a)</button>'+
+      '<span class="sep"></span><button onclick="fOp(\'reset\')">Reiniciar</button>';
+  }
+  bar.innerHTML=h;
+}
+
+/* ---------- listas ---------- */
+function lOrden(op){
+  const e=EST[estAct];
+  const ultiRapido = e.ppf || (e.doble&&e.circ);
+  const antDisponible = e.doble;
+  if(op==='insfront') return (e.circ&&!e.ppf&&!e.doble)?'O(n)':'O(1)';
+  if(op==='insback')  return ultiRapido?'O(1)':'O(n)';
+  if(op==='remfront') return (e.circ&&!e.doble&&!e.ppf)?'O(n)':'O(1)';
+  if(op==='remback')  return (antDisponible&&(e.ppf||e.circ))?'O(1)':'O(n)';
+  return 'O(n)';
+}
+function lPorque(op){
+  const e=EST[estAct];
+  if(op==='insfront') return lOrden(op)==='O(1)'?'Solo toco la cabeza de la lista y los punteros del nodo nuevo.'
+    :'Es circular y sin puntero al final: hay que dar toda la vuelta para que el sig del último apunte al nuevo primero.';
+  if(op==='insback') return lOrden(op)==='O(1)'
+    ?(e.ppf?'Tengo el último a mano en ulti: engancho y actualizo.':'Es circular y doble: el último es L -> ant, lo alcanzo en un paso.')
+    :'No tengo forma de llegar al último sin recorrer toda la lista.';
+  if(op==='remfront') return lOrden(op)==='O(1)'?'Muevo prim al segundo nodo y libero el primero.'
+    :'Circular sin punteros extra: hay que llegar al último para reengancharlo al nuevo primero.';
+  if(op==='remback') return lOrden(op)==='O(1)'
+    ?'Tengo el anterior al último gracias al puntero ant.'
+    :(e.ppf?'Tengo ulti, pero no el anterior a él: hay que recorrer igual. Es el contraejemplo clásico del examen.'
+           :'Hay que recorrer hasta el anteúltimo.');
+  return 'Peor caso: recorrer todos los nodos. En las circulares, con do-while.';
+}
+function lOp(op){
+  const e=EST[estAct], L=ED.lista, v=estVal();
+  ED.hi=-1;
+  if(op==='vaciar'){ED.lista=[];estDraw();estLog('Lista vaciada.');return;}
+  if(op==='insfront'){L.unshift(v);estLog('Insfront('+v+'): el nodo nuevo pasa a ser el primero.');}
+  else if(op==='insback'){L.push(v);estLog('Insback('+v+'): el nodo nuevo queda al final.'+(lOrden(op)==='O(n)'?' Fijate que para llegar ahí hubo que recorrer toda la lista.':''));}
+  else if(op==='remfront'){
+    if(!L.length){estLog('La lista está vacía: Remfront tiene precondición de lista no vacía.',1);return;}
+    const x=L.shift();estLog('Remfront(): saqué el '+x+'.'+(L.length?'':' La lista quedó vacía, así que hay que poner prim y ulti en NULL.'));}
+  else if(op==='remback'){
+    if(!L.length){estLog('La lista está vacía: Remback tiene precondición de lista no vacía.',1);return;}
+    const x=L.pop();estLog('Remback(): saqué el '+x+'. '+lPorque('remback'));}
+  else if(op==='buscar'){
+    const i=L.indexOf(v);
+    ED.hi=i;
+    estLog(i>=0?'Encontré el '+v+' en la posición '+i+' (visité '+(i+1)+' nodo'+(i?'s':'')+').'
+               :'El '+v+' no está en la lista: hubo que visitar los '+L.length+' nodos para saberlo.',i<0);
+  }
+  estShowCode(estAct+'.'+op,lOrden(op),lPorque(op));
+  estDraw();
+}
+function drawLista(){
+  const e=EST[estAct], L=ED.lista, n=L.length;
+  const W=76,G=42,X0=e.ppf?70:52,yB=58,hB=40,yBot=yB+hB;
+  const yAnt=yBot+22, yCirc=e.doble?yBot+52:yBot+24, yCa=yBot+80;
+  const H=e.circ?(e.doble?yCa+18:yCirc+18):(e.doble?yAnt+18:yBot+22);
+  const Wt=Math.max(560,X0+n*(W+G)+90);
+  const o=['<defs><marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5a544c"/></marker>'+
+           '<marker id="m2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b4530a"/></marker>'+
+           '<marker id="m3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c4dbe"/></marker></defs>'];
+  if(!n){
+    o.push('<text x="'+(Wt/2)+'" y="70" text-anchor="middle" font-size="14" fill="#a89f92">Lista vacía — '+(e.ppf?'prim = ulti = NULL':'L = NULL')+'</text>');
+    return '<svg class="strip" viewBox="0 0 '+Wt+' 110" width="'+Wt+'" height="110">'+o.join('')+'</svg>';
+  }
+  const x=i=>X0+i*(W+G);
+  L.forEach((v,i)=>{
+    const X=x(i), sel=(ED.hi===i);
+    const partes=e.doble?[['ant',18],['info',40],['sig',18]]:[['info',52],['sig',24]];
+    const tot=partes.reduce((a,b)=>a+b[1],0);
+    let px=X;
+    o.push('<rect x="'+X+'" y="'+yB+'" width="'+W+'" height="'+hB+'" rx="5" fill="'+(sel?'#fdefe0':'#ffffff')+'" stroke="'+(sel?'#b4530a':'#4a453e')+'" stroke-width="'+(sel?2.5:1.6)+'"/>');
+    partes.forEach((p,k)=>{
+      const w=p[1]/tot*W;
+      if(k) o.push('<line x1="'+px+'" y1="'+yB+'" x2="'+px+'" y2="'+yBot+'" stroke="#cfc7ba"/>');
+      if(p[0]==='info') o.push('<text x="'+(px+w/2)+'" y="'+(yB+26)+'" text-anchor="middle" font-size="15" font-weight="700" fill="'+(sel?'#b4530a':'#22201d')+'">'+v+'</text>');
+      else o.push('<text x="'+(px+w/2)+'" y="'+(yB+25)+'" text-anchor="middle" font-size="9" fill="#9a938a">'+p[0]+'</text>');
+      px+=w;
+    });
+    if(i<n-1) o.push('<line x1="'+(X+W)+'" y1="'+(yB+20)+'" x2="'+(x(i+1)-4)+'" y2="'+(yB+20)+'" stroke="#5a544c" stroke-width="1.8" marker-end="url(#m1)"/>');
+    if(e.doble&&i>0)
+      o.push('<path d="M '+(X+9)+' '+yBot+' C '+(X+9)+' '+yAnt+', '+(x(i-1)+W-9)+' '+yAnt+', '+(x(i-1)+W-9)+' '+(yBot+3)+'" fill="none" stroke="#7c4dbe" stroke-width="1.5" marker-end="url(#m3)"/>');
+  });
+  if(!e.circ){
+    o.push('<line x1="'+(x(n-1)+W)+'" y1="'+(yB+20)+'" x2="'+(x(n-1)+W+30)+'" y2="'+(yB+20)+'" stroke="#5a544c" stroke-width="1.8"/>');
+    o.push('<text x="'+(x(n-1)+W+38)+'" y="'+(yB+25)+'" font-size="12" fill="#9a938a">NULL</text>');
+  }else{
+    o.push('<path d="M '+(x(n-1)+W)+' '+(yB+20)+' L '+(x(n-1)+W+22)+' '+(yB+20)+' L '+(x(n-1)+W+22)+' '+yCirc+' L '+(X0-22)+' '+yCirc+' L '+(X0-22)+' '+(yB+20)+' L '+(X0-4)+' '+(yB+20)+'" fill="none" stroke="#b4530a" stroke-width="1.8" marker-end="url(#m2)"/>');
+    if(e.doble)
+      o.push('<path d="M '+(X0+9)+' '+yBot+' L '+(X0+9)+' '+yCa+' L '+(x(n-1)+W-9)+' '+yCa+' L '+(x(n-1)+W-9)+' '+(yBot+3)+'" fill="none" stroke="#7c4dbe" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#m3)"/>');
+  }
+  if(e.ppf){
+    o.push('<text x="'+(x(0)+10)+'" y="30" font-size="12.5" font-weight="700" fill="#0d6e64">prim</text>');
+    o.push('<line x1="'+(x(0)+16)+'" y1="36" x2="'+(x(0)+16)+'" y2="'+(yB-4)+'" stroke="#0d6e64" stroke-width="1.6" marker-end="url(#m1)"/>');
+    o.push('<text x="'+(x(n-1)+W-34)+'" y="30" font-size="12.5" font-weight="700" fill="#0d6e64">ulti</text>');
+    o.push('<line x1="'+(x(n-1)+W-24)+'" y1="36" x2="'+(x(n-1)+W-24)+'" y2="'+(yB-4)+'" stroke="#0d6e64" stroke-width="1.6" marker-end="url(#m1)"/>');
+  }else{
+    o.push('<text x="'+(x(0)-42)+'" y="'+(yB+25)+'" font-size="13" font-weight="700" fill="#0d6e64">L</text>');
+    o.push('<line x1="'+(x(0)-30)+'" y1="'+(yB+20)+'" x2="'+(x(0)-4)+'" y2="'+(yB+20)+'" stroke="#0d6e64" stroke-width="1.6" marker-end="url(#m1)"/>');
+  }
+  return '<svg class="strip" viewBox="0 0 '+Wt+' '+H+'" width="'+Wt+'" height="'+H+'">'+o.join('')+'</svg>';
+}
+
+/* ---------- arreglo con tope ---------- */
+function aOp(op){
+  const A=ED.arre, v=estVal();
+  ED.hi=-1;
+  if(op==='ins'){
+    if(A.tope>=A.MAX){estLog('El arreglo está lleno: tope llegó a MAX = '+A.MAX+'.',1);return;}
+    A.a[A.tope]=v;A.tope++;
+    estShowCode('','O(1)','Escribo en arre[tope] y sumo uno al tope. No importa cuántos elementos haya.');
+    estLog('Insertado el '+v+' en la posición '+(A.tope-1)+'. Ahora tope = '+A.tope+'.');
+  }
+  if(op==='del'){
+    if(!A.tope){estLog('No hay nada que borrar: el arreglo está vacío.',1);return;}
+    A.tope--;
+    estShowCode('','O(1)','<b>a.tope--</b> y listo. El valor sigue físicamente en memoria pero ya no cuenta: quedó fuera del tope. Este es literalmente el ejercicio 1a de 2026 Feb.');
+    estLog('BorrarUltimo(): bajé el tope a '+A.tope+'. El valor de la celda '+A.tope+' quedó como basura.');
+  }
+  if(op==='kesimo'){
+    const k=estVal2();
+    if(k<1||k>A.tope){estLog('Precondición violada: k tiene que estar entre 1 y Largo = '+A.tope+'.',1);return;}
+    ED.hi=k-1;
+    estShowCode('','O(1)','<b>return sec.arre[k-1]</b>. El −1 es porque el k-ésimo empieza a contar en 1 y el arreglo en 0.');
+    estLog('K_esimo('+k+') = '+A.a[k-1]+', que vive en la celda '+(k-1)+'.');
+  }
+  if(op==='largo'){
+    estShowCode('','O(1)','<b>return a.tope</b>. Contar con un for sería O(n) y resolvería lo mismo: por eso la múltiple opción de 2023 Feb pregunta si existe otro algoritmo de O(1).');
+    estLog('Largo() = '+A.tope+'.');
+  }
+  estDraw();
+}
+function drawArreglo(){
+  const A=ED.arre;
+  let h='<div class="arr">';
+  for(let i=0;i<A.MAX;i++){
+    const dentro=i<A.tope;
+    h+='<div class="c'+(dentro?'':' off')+(ED.hi===i?' cur':'')+'"><span class="i">'+i+'</span>'+
+       (dentro?A.a[i]:(A.a[i]!=null?'<i style="opacity:.35">'+A.a[i]+'</i>':'·'))+'</div>';
+  }
+  h+='</div><div class="opnote"><span class="obadge o1">tope = '+A.tope+'</span><span>Las celdas grises están fuera del tope: son basura, aunque tengan un número escrito.</span></div>';
+  return h;
+}
+
+/* ---------- mapeo ---------- */
+function mOp(op){
+  const M=ED.mapeo, k=estVal2(), v=estVal();
+  ED.hi=-1;
+  if(op==='assign'){
+    if(k<0||k>9){estLog('La clave tiene que estar en el rango del mapeo: 0 a 9.',1);return;}
+    M[k]={e:true,v};ED.hi=k;
+    estShowCode('','O(1)','El índice <i>es</i> la clave: acceso directo, sin buscar. Es la ventaja del Mapeo sobre el Hash — O(1) en el <b>peor</b> caso, no en el promedio.');
+    estLog('Assign('+k+', '+v+'): la celda '+k+' pasa a existe = TRUE.');
+  }
+  if(op==='delete'){
+    if(k<0||k>9){estLog('Clave fuera de rango.',1);return;}
+    M[k].e=false;ED.hi=k;
+    estShowCode('','O(1)','Alcanza con poner <code>existe = FALSE</code>: el valor queda pero deja de contar.');
+    estLog('Delete('+k+'): la celda '+k+' pasa a existe = FALSE.');
+  }
+  if(op==='member'){
+    ED.hi=k;
+    estShowCode('','O(1)','<b>return M[clave].existe</b>. Una sola instrucción.');
+    estLog('Member('+k+') = '+(M[k]&&M[k].e?'TRUE':'FALSE')+'.',!(M[k]&&M[k].e));
+  }
+  if(op==='total'){
+    const i=M.findIndex(c=>!c.e);
+    estShowCode('','O(n)','Hay que recorrer hasta encontrar una celda sin usar. Peor caso: la función es total y se visitan las n celdas.');
+    estLog(i<0?'EsTotal() = TRUE: todas las claves tienen imagen.':'EsTotal() = FALSE: la celda '+i+' no existe, así que la función no es total.');
+  }
+  if(op==='vacio'){
+    const hay=M.some(c=>c.e);
+    estShowCode('','O(n)','Peor caso <i>cuando sí está vacío</i>: hay que mirar las TAM celdas para poder afirmarlo. Ejercicio 1c de 2026 Feb.');
+    estLog(hay?'EstaVacio() = FALSE: hay al menos una celda con existe = TRUE.':'EstaVacio() = TRUE.');
+  }
+  estDraw();
+}
+function drawMapeo(){
+  let h='<div class="arr">';
+  ED.mapeo.forEach((c,i)=>{
+    h+='<div class="c'+(c.e?' t':' off')+(ED.hi===i?' cur':'')+'"><span class="i">clave '+i+'</span>'+
+       (c.e?c.v:'—')+'<span class="i">'+(c.e?'T':'F')+'</span></div>';
+  });
+  return h+'</div><div class="opnote"><span>Arriba el índice (que es la clave), en el medio <code>info</code>, abajo <code>existe</code>.</span></div>';
+}
+
+/* ---------- hash ---------- */
+function hOp(op){
+  const H=ED.hash, B=7, x=estVal();
+  ED.hi=-1;ED.hi2=-1;
+  if(op==='vaciar'){ED.hash=Array.from({length:B},()=>[]);estDraw();estLog('Tabla vacía.');return;}
+  if(op==='colision'){
+    const base=Math.floor(Math.random()*B);
+    [base,base+B,base+2*B].forEach(v=>{if(!H[v%B].includes(v))H[v%B].push(v);});
+    ED.hi=base;
+    estShowCode('','O(1) promedio','Tres claves distintas que dispersan a la misma cubeta: la lista crece y la búsqueda dentro de esa cubeta ya no es inmediata. Si todas las claves colisionaran, el Hash degeneraría en una lista y sería O(n).');
+    estLog('Inserté '+base+', '+(base+B)+' y '+(base+2*B)+': las tres dan h(x) = '+base+'. Eso es una colisión.');
+    estDraw();return;
+  }
+  const c=((x%B)+B)%B; ED.hi=c;
+  if(op==='ins'){
+    if(H[c].includes(x)){estLog('La clave '+x+' ya estaba en la cubeta '+c+'.',1);estDraw();return;}
+    H[c].push(x);
+    estShowCode('','O(1) promedio','Calculo <code>h('+x+') = '+x+' % 7 = '+c+'</code> y agrego a esa lista. El costo real depende de cuánto midan las cubetas.');
+    estLog('Insert('+x+'): h('+x+') = '+c+', va a esa cubeta.');
+  }
+  if(op==='member'){
+    const hay=H[c].includes(x);
+    estShowCode('','O(1) promedio','Voy directo a la cubeta h(clave) y recorro <i>solo esa</i> lista. Con las cubetas bien dimensionadas son pocos nodos.');
+    estLog('Member('+x+'): busco en la cubeta '+c+' y '+(hay?'la encuentro.':'no está.'),!hay);
+  }
+  if(op==='del'){
+    const i=H[c].indexOf(x);
+    if(i<0){estLog('La clave '+x+' no está en la cubeta '+c+'.',1);estDraw();return;}
+    H[c].splice(i,1);
+    estShowCode('','O(1) promedio','Igual que Member, pero desenganchando el nodo de la lista de la cubeta.');
+    estLog('Delete('+x+'): la saqué de la cubeta '+c+'.');
+  }
+  estDraw();
+}
+function drawHash(){
+  let h='<div class="adjlist">';
+  ED.hash.forEach((b,i)=>{
+    h+='<div'+(ED.hi===i?' style="background:#fdefe0;border-radius:5px;padding:0 6px"':'')+'>'+
+       '<span class="v">'+i+'</span><span class="ar">→</span>';
+    h+=b.length?b.map(v=>'<span class="cell">'+v+'</span>').join('<span class="ar">→</span>')+'<span class="ar">→</span><span class="nil">NULL</span>'
+              :'<span class="nil">NULL</span>';
+    h+='</div>';
+  });
+  return h+'</div><div class="opnote"><span class="obadge">h(x) = x % 7</span><span>B = 7 cubetas. Cada una es una LPPF de elementos.</span></div>';
+}
+
+/* ---------- árboles binarios ---------- */
+function abbIns(t,v){
+  if(!t) return {v,i:null,d:null};
+  if(v<t.v) t.i=abbIns(t.i,v); else if(v>t.v) t.d=abbIns(t.d,v);
+  return t;
+}
+function alt(t){return t?t.h:0;}
+function upd(t){t.h=1+Math.max(alt(t.i),alt(t.d));return t;}
+function rotDer(t){const a=t.i;t.i=a.d;a.d=t;upd(t);upd(a);return a;}
+function rotIzq(t){const a=t.d;t.d=a.i;a.i=t;upd(t);upd(a);return a;}
+function avlIns(t,v){
+  if(!t) return {n:{v,i:null,d:null,h:1},r:''};
+  let r='';
+  if(v<t.v){const x=avlIns(t.i,v);t.i=x.n;r=x.r;}
+  else if(v>t.v){const x=avlIns(t.d,v);t.d=x.n;r=x.r;}
+  else return {n:t,r:'repetido'};
+  upd(t);
+  const b=alt(t.i)-alt(t.d);
+  if(b>1&&v<t.i.v){t=rotDer(t);r='rotación simple a la derecha';}
+  else if(b<-1&&v>t.d.v){t=rotIzq(t);r='rotación simple a la izquierda';}
+  else if(b>1&&v>t.i.v){t.i=rotIzq(t.i);t=rotDer(t);r='rotación doble izquierda-derecha';}
+  else if(b<-1&&v<t.d.v){t.d=rotDer(t.d);t=rotIzq(t);r='rotación doble derecha-izquierda';}
+  return {n:t,r};
+}
+function recorrer(t,modo,out){
+  if(!t) return out;
+  if(modo==='pre') out.push(t.v);
+  recorrer(t.i,modo,out);
+  if(modo==='in') out.push(t.v);
+  recorrer(t.d,modo,out);
+  if(modo==='post') out.push(t.v);
+  return out;
+}
+function tOp(op){
+  const key=estAct;
+  let t=ED[key];
+  const v=estVal();
+  ED.hi=-1;
+  if(op==='vaciar'){ED[key]=null;estDraw();estLog('Árbol vacío.');return;}
+  if(op==='degenerar'){
+    ED.abb=null;[1,2,3,4,5,6].forEach(x=>{ED.abb=abbIns(ED.abb,x);});
+    estShowCode('','O(n)','Insertando valores ya ordenados, el ABB degenera en una lista: la búsqueda pasa de O(log n) a O(n). Exactamente por esto existen los AVL.');
+    estLog('Insertadas las claves 1 a 6 en orden. Mirá el resultado: un ABB totalmente desbalanceado, que es el caso extremo del módulo 1.');
+    estDraw();return;
+  }
+  if(op==='ins'){
+    if(key==='abb'){
+      ED.abb=abbIns(t,v);
+      estShowCode('','O(log n) si está equilibrado','Bajo comparando: menor a la izquierda, mayor a la derecha, hasta encontrar un lugar vacío. El ABB no hace nada para mantenerse equilibrado.');
+      estLog('Insertado el '+v+'. Altura actual del árbol: '+altura(ED.abb)+'.');
+    }else{
+      const x=avlIns(t,v);ED.avl=x.n;
+      estShowCode('','O(log n) garantizado','Se inserta como en un ABB y al volver de la recursión se recalculan las alturas. Si algún nodo queda con diferencia mayor a 1, se rota.');
+      estLog('Insertado el '+v+'.'+(x.r&&x.r!=='repetido'?' Hubo <b>'+x.r+'</b> para reequilibrar.':' No hizo falta rotar.'));
+    }
+  }
+  if(op==='buscar'){
+    let n=ED[key],pasos=0,ok=false;
+    while(n){pasos++;if(n.v===v){ok=true;break;}n=v<n.v?n.i:n.d;}
+    ED.hi=ok?v:-1;
+    estShowCode('','O(log n)','En cada comparación descarto la mitad del árbol. Por eso importa que esté equilibrado.');
+    estLog(ok?'Encontré el '+v+' en '+pasos+(pasos>1?' comparaciones':' comparación')+'.':'El '+v+' no está: llegué a NULL después de '+pasos+(pasos!==1?' comparaciones':' comparación')+'.',!ok);
+  }
+  if(op==='in'||op==='pre'||op==='post'){
+    const r=recorrer(ED[key],op,[]);
+    const nom={in:'Inorden',pre:'Preorden',post:'Postorden'}[op];
+    estShowCode('','O(n)',op==='in'?'La recorrida <b>inorden</b> de un ABB devuelve las claves ordenadas de menor a mayor. Eso es lo que hace que el AVL sirva para el requerimiento «listar ordenado» del ejercicio de TAD.':'Se visitan los n nodos una sola vez.');
+    estLog(nom+': <b>'+(r.join(' · ')||'árbol vacío')+'</b>');
+  }
+  estDraw();
+}
+function altura(t){return t?1+Math.max(altura(t.i),altura(t.d)):0;}
+function drawArbol(t,conAltura){
+  if(!t) return '<p class="hint" style="padding:20px 0">Árbol vacío.</p>';
+  let cx=0; const pos=[];
+  (function lay(n,d){
+    if(!n) return;
+    lay(n.i,d+1);
+    n._x=cx++; n._y=d;
+    pos.push(n);
+    lay(n.d,d+1);
+  })(t,0);
+  const dx=64, dy=64, W=Math.max(520,cx*dx+80), Hh=(Math.max(...pos.map(p=>p._y))+1)*dy+50;
+  const px=n=>40+n._x*dx, py=n=>34+n._y*dy;
+  const o=[];
+  pos.forEach(n=>{
+    [n.i,n.d].forEach(c=>{if(c)o.push('<line x1="'+px(n)+'" y1="'+py(n)+'" x2="'+px(c)+'" y2="'+py(c)+'" stroke="#8f887e" stroke-width="1.8"/>');});
+  });
+  pos.forEach(n=>{
+    const sel=ED.hi===n.v;
+    o.push('<circle cx="'+px(n)+'" cy="'+py(n)+'" r="18" fill="'+(sel?'#b4530a':'#ffffff')+'" stroke="'+(sel?'#8c3f07':'#4a453e')+'" stroke-width="1.8"/>');
+    o.push('<text x="'+px(n)+'" y="'+(py(n)+5)+'" text-anchor="middle" font-size="13.5" font-weight="700" fill="'+(sel?'#fff':'#22201d')+'">'+n.v+'</text>');
+    if(conAltura) o.push('<text x="'+(px(n)+21)+'" y="'+(py(n)-14)+'" font-size="10" fill="#7c4dbe">h'+(n.h||1)+'</text>');
+  });
+  return '<svg class="strip" viewBox="0 0 '+W+' '+Hh+'" width="'+W+'" height="'+Hh+'">'+o.join('')+'</svg>';
+}
+
+/* ---------- árbol N-ario ---------- */
+function nOp(op){
+  const v=estVal();
+  if(op==='hijo'){
+    const s=ED.narioSel||ED.nario;
+    if(s.h.length>=4){estLog('Ese nodo ya tiene N = 4 hijos: topeHijos llegó al máximo.',1);return;}
+    s.h.push({v,h:[]});
+    estShowCode('','O(1)','<code>nodo -> hijos[nodo -> topeHijos] = nuevo;  nodo -> topeHijos++;</code> El arreglo de hijos se llena de izquierda a derecha.');
+    estLog('Agregué el hijo '+v+' al nodo '+s.v+'. Ahora topeHijos = '+s.h.length+'.');
+  }
+  if(op==='borrar'){
+    if(!ED.narioSel||ED.narioSel===ED.nario){estLog('Seleccioná primero un nodo que no sea la raíz, tocándolo en el dibujo.',1);return;}
+    (function quitar(n){n.h=n.h.filter(c=>c!==ED.narioSel);n.h.forEach(quitar);})(ED.nario);
+    ED.narioSel=null;
+    estLog('Nodo borrado junto con todo su subárbol.');
+  }
+  if(op==='recorrer'){
+    const r=[];(function rec(n){if(!n)return;r.push(n.v);n.h.forEach(rec);})(ED.nario);
+    estShowCode('','O(n)','La recorrida en profundidad visita el nodo y después itera <code>for (i = 0; i &lt; topeHijos; i++)</code> llamándose sobre cada hijo.');
+    estLog('Recorrida en profundidad: <b>'+r.join(' · ')+'</b>');
+  }
+  if(op==='pertenece'){
+    let pasos=0,ok=false;
+    (function bus(n){if(!n||ok)return;pasos++;if(n.v===v){ok=true;return;}n.h.forEach(bus);})(ED.nario);
+    estShowCode('','O(n)','El <code>Pertenece</code> del ejercicio que cayó en 2022 y 2025: recorre y corta apenas encuentra, con <code>while (!esta &amp;&amp; i &lt; topeHijos)</code>.');
+    estLog(ok?'El '+v+' pertenece al árbol (lo encontré visitando '+pasos+' nodos).':'El '+v+' no pertenece: hubo que visitar el árbol entero.',!ok);
+  }
+  estDraw();
+}
+function drawNario(){
+  const t=ED.nario;
+  if(!t) return '<p class="hint">Árbol vacío.</p>';
+  let cx=0; const pos=[];
+  (function lay(n,d){
+    n._y=d;
+    if(!n.h.length){n._x=cx++;}
+    else{n.h.forEach(c=>lay(c,d+1));n._x=(n.h[0]._x+n.h[n.h.length-1]._x)/2;}
+    pos.push(n);
+  })(t,0);
+  const dx=68,dy=66,W=Math.max(520,cx*dx+80),Hh=(Math.max(...pos.map(p=>p._y))+1)*dy+50;
+  const px=n=>44+n._x*dx, py=n=>34+n._y*dy;
+  const o=[];
+  pos.forEach(n=>n.h.forEach(c=>o.push('<line x1="'+px(n)+'" y1="'+py(n)+'" x2="'+px(c)+'" y2="'+py(c)+'" stroke="#8f887e" stroke-width="1.8"/>')));
+  pos.forEach((n,i)=>{
+    const sel=ED.narioSel===n;
+    o.push('<circle cx="'+px(n)+'" cy="'+py(n)+'" r="18" fill="'+(sel?'#b4530a':'#ffffff')+'" stroke="'+(sel?'#8c3f07':'#4a453e')+'" stroke-width="1.8" data-nn="'+pos.indexOf(n)+'" style="cursor:pointer"/>');
+    o.push('<text x="'+px(n)+'" y="'+(py(n)+5)+'" text-anchor="middle" font-size="13.5" font-weight="700" fill="'+(sel?'#fff':'#22201d')+'" pointer-events="none">'+n.v+'</text>');
+  });
+  window._narioPos=pos;
+  return '<svg class="strip" id="narioSvg" viewBox="0 0 '+W+' '+Hh+'" width="'+W+'" height="'+Hh+'">'+o.join('')+'</svg>';
+}
+
+/* ---------- MFSet ---------- */
+function fFind(x){const p=ED.mfset;while(p[x]!==x)x=p[x];return x;}
+function fOp(op){
+  const cl=x=>Math.max(0,Math.min(7,isNaN(x)?0:x));
+  const a=cl(parseInt((document.getElementById('estVal')||{}).value,10)),
+        b=cl(parseInt((document.getElementById('estVal2')||{}).value,10));
+  if(op==='reset'){ED.mfset=Array.from({length:8},(_,i)=>i);estDraw();estLog('Ocho conjuntos, cada elemento solo.');return;}
+  if(op==='find'){
+    estShowCode('','O(altura)','<code>while (padre[x] != x) x = padre[x];</code> Sube hasta la raíz, que es el representante del conjunto.');
+    estLog('Find('+a+') = '+fFind(a)+'. Es el representante del conjunto donde vive '+a+'.');
+  }
+  if(op==='union'){
+    const ra=fFind(a), rb=fFind(b);
+    if(ra===rb){estLog('Union('+a+', '+b+'): ya estaban en el mismo conjunto. En Kruskal, esto significa que la arista <b>formaría un ciclo</b> y se descarta.',1);estDraw();return;}
+    ED.mfset[ra]=rb;
+    estShowCode('','O(1)','Cuelgo la raíz de un conjunto de la raíz del otro. Es todo lo que hace Union.');
+    estLog('Union('+a+', '+b+'): el conjunto de '+ra+' pasa a colgar de '+rb+'. En Kruskal, acá se acepta la arista.');
+  }
+  estDraw();
+}
+function drawMFSet(){
+  const p=ED.mfset;
+  let h='<div class="opnote" style="margin:0 0 8px"><b>padre[]</b></div><div class="arr">'+
+    p.map((v,i)=>'<div class="c'+(v===i?' t':'')+'"><span class="i">'+i+'</span>'+v+'</div>').join('')+'</div>';
+  const gr={};
+  p.forEach((_,i)=>{const r=fFind(i);(gr[r]=gr[r]||[]).push(i);});
+  h+='<div class="opnote" style="margin:14px 0 8px"><b>Conjuntos</b></div><div class="klist">'+
+     Object.keys(gr).map(r=>'<span class="e">{ '+gr[r].join(', ')+' }  → representante '+r+'</span>').join('')+'</div>';
+  return h;
+}
+
+/* ---------- pintar ---------- */
+function estDraw(){
+  const e=EST[estAct], box=document.getElementById('estViz');
+  if(!box) return;
+  if(e.fam==='lista') box.innerHTML=drawLista();
+  else if(e.fam==='arreglo') box.innerHTML=drawArreglo();
+  else if(e.fam==='mapeo') box.innerHTML=drawMapeo();
+  else if(e.fam==='hash') box.innerHTML=drawHash();
+  else if(e.fam==='arbol') box.innerHTML=drawArbol(ED[estAct],estAct==='avl');
+  else if(e.fam==='nario'){
+    box.innerHTML=drawNario();
+    const svg=document.getElementById('narioSvg');
+    if(svg) svg.addEventListener('pointerdown',ev=>{
+      const c=ev.target.closest('[data-nn]'); if(!c) return;
+      ED.narioSel=window._narioPos[+c.dataset.nn];
+      estDraw(); estLog('Nodo <b>'+ED.narioSel.v+'</b> seleccionado. Tiene topeHijos = '+ED.narioSel.h.length+'.');
+    });
+  }
+  else if(e.fam==='mfset') box.innerHTML=drawMFSet();
+}
+
+
 /* ============ init ============ */
 document.addEventListener('DOMContentLoaded',()=>{
   renderCode(document);
   buildQuiz();
   buildEx();
+  buildTipos();
+  gInitBoard();
+  gDraw();
+  estInit();
+  document.querySelectorAll('#tipoChips .chip').forEach(c=>c.onclick=()=>{
+    document.querySelectorAll('#tipoChips .chip').forEach(x=>x.classList.remove('on'));
+    c.classList.add('on'); tipoFilter=c.dataset.f; buildTipos();
+  });
   document.querySelectorAll('#quizChips .chip').forEach(c=>c.onclick=()=>{
     document.querySelectorAll('#quizChips .chip').forEach(x=>x.classList.remove('on'));
     c.classList.add('on'); quizFilter=c.dataset.f; buildQuiz();
